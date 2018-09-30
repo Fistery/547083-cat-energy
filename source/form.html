@@ -11,108 +11,110 @@
 <body>
 
   <header class="main-header">
-
-    <h1 class="visually-hidden">Сервис для спортивных котиков</h1>
+    <div class="wrapper">
+    <h1 class="visually-hidden">Магазин функционального питания для котов</h1>
     <nav class="main-navigation">
-      <ul class="main-navigation__list navigation-list">
-        <li class="navigation-list__item">Cat energy <button class="nav-btn nav-btn--open"></button></li>
+        <h2 class="logo">Cat energy</h2> <button class="nav-btn nav-btn--open"></button>
         <ul class="main-navigation__dropdown dropdown-list">
           <li class="navigation-list__item">Cat energy <button class="nav-btn nav-btn--close"></button></li>
           <li class="navigation-list__item"><a href="index.html" class="list-item__link">Главная</a></li>
           <li class="navigation-list__item"><a href="catalog.html" class="list-item__link">Каталог продукции</a></li>
-          <li class="navigation-list__item"><a hclass="list-item__link">Подбор программы</a></li>
+          <li class="navigation-list__item"><a class="list-item__link">Подбор программы</a></li>
         </ul>
         </li>
       </ul>
     </nav>
-
+    <hr class="decoration-line">
+  </div>
   </header>
 
-  <main class="main-container">
+  <main class="main-content contact-page">
 
-    <h2 class="main-container__head">Подбор программы</h2>
-    <p class="main-container__text">Заполните анкету и мы подберем
+    <h2 class="contact-page__title">Подбор программы</h2>
+    <p class="contact-page__text">Заполните анкету и мы подберем
       программу питания для вашего кота
     </p>
-    <form class="main-form" action="https://echo.htmlacademy.ru" method="GET">
-      <div class="text-input-block">
-        <label class="text-block__label text-block__label--text">Имя:*
-          <input class="text-block__input text-block__input--text" type="text" name="name-input" placeholder="БАРСИК">
-        </label><br>
-        <label class="text-block__label text-block__label--text">Вес (кг):*
-          <input class="text-block__input text-block__input--text" type="text" name="weight-input" placeholder="7">
-        </label><br>
-        <label class="text-block__label text-block__label--text">Возраст (лет):
-          <input class="text-block__input text-block__input--text" type="text" name="age-input" placeholder="7">
+    <form class="form contact-form" action="https://echo.htmlacademy.ru" method="GET">
+      <div class="conctact-form__row">
+        <label class="form__label">Имя:*
+          <input class="form__input form__input--text" type="text" name="name-input" placeholder="БАРСИК">
+        </label>
+        <label class="form__label">Вес (кг):*
+          <input class="form__input form__input--text" type="text" name="weight-input" placeholder="7">
+        </label>
+        <label class="form__label">Возраст (лет):
+          <input class="form__input form__input--text" type="text" name="age-input" placeholder="7">
         </label>
       </div>
       <hr>
-      <div class="radio-input-block">
-        <label class="radio-block__label radio-block__label--radio">Похудение
-          <input class="main-form__input radio-block__input--radio" type="radio" name="weight">
-        </label><br>
-        <label class="radio-block__label radio-block__label--radio">Набор массы
-          <input class="radio-block__input radio-block__input--radio" type="radio" name="weight">
-        </label><br>
-        <label class="radio-block__label radio-block__label--radio">Не знаю (нужен ваш совет)
-          <input class="radio-block__input radio-block__input--radio" type="radio" name="weight">
+      <div class="conctact-form__radio">
+        <label class="form__label">Похудение
+          <input class="form__input form__input--radio" type="radio" name="weight">
+        </label>
+        <label class="form__label">Набор массы
+          <input class="form__input form__input--radio" type="radio" name="weight">
+        </label>
+        <label class="form__label">Не знаю (нужен ваш совет)
+          <input class="form__input form__input--radio" type="radio" name="weight">
         </label>
       </div>
       <hr>
       <div class="contacts-block">
-        <p class="contacts-block__text contacts-block__text--bold">Контактные данные (владельца кота)</p>
-        <label class="contacts-block__label contacts-block__label">E-Mail:*
-          <input class="contacts-block__input contacts-block__input--email" type="email" name="email-input" placeholder="KUKLAHEV@GMAIL.COM">
+        <h3 class="contacts-block__title contacts-block__title--green-line">Контактные данные (владельца кота)</h3>
+        <label class="form__label">E-Mail:*
+          <input class="form__input form-input--email" type="email" name="email-input" placeholder="KUKLAHEV@GMAIL.COM">
         </label><br>
-        <label class="contacts-block__label contacts-block__label">Телефон:*
-          <input class="contacts-block__input contacts-block__input--number" type="number" name="number-input"
+        <label class="form__label">Телефон:*
+          <input class="form__input form-input--number" type="number" name="number-input"
             placeholder="8 (960) 900-60-90">
         </label>
       </div>
       <div class="textarea-block">
-        <p class="textarea-block__text textarea-block__text--bold">Комментарий</p>
+        <h3 class="textarea-block__title textarea-block__title--green-line">Комментарий</h3>
         <input class="textarea-block__input" type="textarea" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА">
       </div>
       <div class="checkbox-input-block">
-        <label class="checkbox-block__label checkbox-block__label--checkbox">Сахарозаменитель
-          <input class="checkbox-block__input checkbox-block__input--checkbox" type="checkbox" name="sugar">
+        <label class="form-label">Сахарозаменитель
+          <input class="form__input form__input--checkbox" type="checkbox" name="sugar">
         </label><br>
-        <label class="checkbox-block__label checkbox-block__label--checkbox">Питьевая вода
-          <input class="checkbox-block__input checkbox-block__input--checkbox" type="checkbox" name="whater">
+        <label class="form-label">Питьевая вода
+          <input class="form__input form__input--checkbox" type="checkbox" name="whater">
         </label><br>
-        <label class="checkbox-block__label checkbox-block__label--checkbox">Молоко
-          <input class="checkbox-block__input checkbox-block__input--checkbox" type="checkbox" name="milk">
+        <label class="form-labelx">Молоко
+          <input class="form__input form__input--checkbox" type="checkbox" name="milk">
         </label>
-        <label class="checkbox-block__label checkbox-block__label--checkbox">Витамины
-          <input class="checkbox-block__input checkbox-block__input--checkbox" type="checkbox" name="vitamins">
+        <label class="form-label">Витамины
+          <input class="form__input form__input--checkbox" type="checkbox" name="vitamins">
         </label>
       </div>
-      <button class="btn-all btn-form" type="submit">Отправить заявку</button>
-      <p class="form-text-tip">* — Обязательные поля</p>
+      <button class="btn btn-green" type="submit">Отправить заявку</button>
+      <p class="form-text">* — Обязательные поля</p>
     </form>
   </main>
 
   <footer class="main-footer">
-    <div class="address-text">
-      <p class="addres-text address-text--bold">Приглашаем к сотрудничеству диллеров!</p>
+    <div class="wrapper">
+    <div class="address">
+      <p class="addres-text address--bold">Приглашаем к сотрудничеству диллеров!</p>
       <p class="addres-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <div class="map-block">
-
+    <div class="map">
+        <img src="" alt="мы на карте" class="map">
     </div>
     <p class="footer-logo-text">
       <span>cat</span> energy
     </p>
-    <div class="social-block">
-      <ul class="social-block__list social-list">
+    <div class="social">
+      <ul class="social__list">
         <li class="social-list__item list-item"><a href="#" class="list-item__link vk-link"><img src="#" alt="vk"></a></li>
         <li class="social-list__item list-item"><a href="#" class="list-item__link insta-link"><img src="#" alt="insta"></a></li>
         <li class="social-list__item list-item"><a href="#" class="list-item__link fb-link"><img src="#" alt="fb"></a></li>
       </ul>
     </div>
-    <div class="academy-block">
-      <a href="" class="academy-block__link">HTML Academy</a>
-      <a href="" class="academy-block__link"><img src="#" alt="academy logotype"></a>
+    <div class="copyright">
+      <a href="" class="copyright__link">HTML Academy</a>
+      <a href="" class="copyright__link"><img src="#" alt="academy logotype"></a>
+    </div>
     </div>
   </footer>
 
