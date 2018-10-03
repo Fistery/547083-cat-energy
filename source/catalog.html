@@ -6,22 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="header">
     <div class="container">
-      <nav class="main-navigation">
+      <nav class="navigation-list">
         <a href="" class="logo-link">
           <img class="image logo logo--header" src="#" alt="">
         </a>
-        <button class="nav-btn nav-btn btn--green--open"></button>
-        <ul class="main-navigation__dropdown dropdown-list">
-          <li class="navigation-list__item">Cat energy <button class="nav-btn nav-btn--close"></button></li>
-          <li class="navigation-list__item"><a href="index.html" class="list-item__link">Главная</a></li>
-          <li class="navigation-list__item"><a class="list-item__link">Каталог продукции</a></li>
-          <li class="navigation-list__item"><a href="form.html" class="list-item__link">Подбор программы</a></li>
+        <button class="nav-btn nav-btn--open"></button>
+        <ul class="navigation-list__dropdown dropdown-list">
+          <li class="dropdown-list__item"><a href="index.html" class="dropdown-list__link">Главная</a></li>
+          <li class="dropdown-list__item"><a class="dropdown-list__link">Каталог продукции</a></li>
+          <li class="dropdown-list__item"><a href="form.html" class="dropdown-list__link">Подбор программы</a></li>
         </ul>
         </li>
         </ul>
@@ -37,59 +38,19 @@
       <hr class="grey-line">
       <div class="catalog__item">
         <img class="image catalog__img" src="#" alt="Cat energy">
-        <div class="catalog__content__wrapper">
-          <h3 class="catalog__item-title">Cat energy pro 500 г</h3>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Обьем</span>
-              <span class="catalog-item__text">500 г</span>
+        <div class="catalog__content-wrapper">
+          <h3 class="catalog__title">Cat energy pro 500 г</h3>
+            <div class="catalog__row">
+              <span class="catalog__text">Обьем</span>
+              <span class="catalog__text">500 г</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Вкус</span>
-              <span class="catalog-item__text">Курица</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Вкус</span>
+              <span class="catalog__text">Курица</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Цена</span>
-              <span class="catalog-item__text">700 Р</span>
-            </div>
-        </div>
-        <a href="#" class="btn btn--green">Заказать</a>
-      </div>
-      <hr class="grey-line">
-      <div class="catalog__item">
-        <img class="image catalog__img catalog__img--big" src="#" alt="Cat energy">
-        <div class="catalog__content__wrapper">
-          <h3 class="catalog__item-title">Cat energy pro 1000 г</h3>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Обьем</span>
-              <span class="catalog-item__text">1000 г</span>
-            </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Вкус</span>
-              <span class="catalog-item__text">Курица</span>
-            </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Цена</span>
-              <span class="catalog-item__text">1000 Р</span>
-            </div>
-        </div>
-        <a href="#" class="btn btn--green">Заказать</a>
-      </div>
-      <hr class="grey-line">
-      <div class="catalog__item">
-        <img class="image catalog__img" src="#" alt="Cat energy">
-        <div class="catalog__content__wrapper">
-          <h3 class="catalog__item-title">Cat energy pro 500 г</h3>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Обьем</span>
-              <span class="catalog-item__text">500 г</span>
-            </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Вкус</span>
-              <span class="catalog-item__text">Рыба</span>
-            </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Цена</span>
-              <span class="catalog-item__text">700 Р</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Цена</span>
+              <span class="catalog__text">700 Р</span>
             </div>
         </div>
         <a href="#" class="btn btn--green">Заказать</a>
@@ -97,19 +58,19 @@
       <hr class="grey-line">
       <div class="catalog__item">
         <img class="image catalog__img catalog__img--big" src="#" alt="Cat energy">
-        <div class="catalog__content__wrapper">
-          <h3 class="catalog__item-title">Cat energy pro 1000 г</h3>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Обьем</span>
-              <span class="catalog-item__text">1000 г</span>
+        <div class="catalog__content-wrapper">
+          <h3 class="catalog__title">Cat energy pro 1000 г</h3>
+            <div class="catalog__row">
+              <span class="catalog__text">Обьем</span>
+              <span class="catalog__text">1000 г</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Вкус</span>
-              <span class="catalog-item__text">Рыба</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Вкус</span>
+              <span class="catalog__text">Курица</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Цена</span>
-              <span class="catalog-item__text">1000 Р</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Цена</span>
+              <span class="catalog__text">1000 Р</span>
             </div>
         </div>
         <a href="#" class="btn btn--green">Заказать</a>
@@ -117,19 +78,19 @@
       <hr class="grey-line">
       <div class="catalog__item">
         <img class="image catalog__img" src="#" alt="Cat energy">
-        <div class="catalog__content__wrapper">
-          <h3 class="catalog__item-title">Cat energy slim 500 г</h3>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Обьем</span>
-              <span class="catalog-item__text">500 г</span>
+        <div class="catalog__content-wrapper">
+          <h3 class="catalog__title">Cat energy pro 500 г</h3>
+            <div class="catalog__row">
+              <span class="catalog__text">Обьем</span>
+              <span class="catalog__text">500 г</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Вкус</span>
-              <span class="catalog-item__text">Гречка</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Вкус</span>
+              <span class="catalog__text">Рыба</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Цена</span>
-              <span class="catalog-item__text">400 Р</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Цена</span>
+              <span class="catalog__text">700 Р</span>
             </div>
         </div>
         <a href="#" class="btn btn--green">Заказать</a>
@@ -137,19 +98,19 @@
       <hr class="grey-line">
       <div class="catalog__item">
         <img class="image catalog__img catalog__img--big" src="#" alt="Cat energy">
-        <div class="catalog__content__wrapper">
-          <h3 class="catalog__item-title">Cat energy slim 1000 г</h3>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Обьем</span>
-              <span class="catalog-item__text">1000 г</span>
+        <div class="catalog__content-wrapper">
+          <h3 class="catalog__title">Cat energy pro 1000 г</h3>
+            <div class="catalog__row">
+              <span class="catalog__text">Обьем</span>
+              <span class="catalog__text">1000 г</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Вкус</span>
-              <span class="catalog-item__text">Гречка</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Вкус</span>
+              <span class="catalog__text">Рыба</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Цена</span>
-              <span class="catalog-item__text">700 Р</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Цена</span>
+              <span class="catalog__text">1000 Р</span>
             </div>
         </div>
         <a href="#" class="btn btn--green">Заказать</a>
@@ -157,19 +118,59 @@
       <hr class="grey-line">
       <div class="catalog__item">
         <img class="image catalog__img" src="#" alt="Cat energy">
-        <div class="catalog__content__wrapper">
-          <h3 class="catalog__item-title">Cat energy slim 500 г</h3>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Обьем</span>
-              <span class="catalog-item__text">500 г</span>
+        <div class="catalog__content-wrapper">
+          <h3 class="catalog__title">Cat energy slim 500 г</h3>
+            <div class="catalog__row">
+              <span class="catalog__text">Обьем</span>
+              <span class="catalog__text">500 г</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Вкус</span>
-              <span class="catalog-item__text">Рис</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Вкус</span>
+              <span class="catalog__text">Гречка</span>
             </div>
-            <div class="catalog__item-aside">
-              <span class="catalog-item__text">Цена</span>
-              <span class="catalog-item__text">500 Р</span>
+            <div class="catalog__row">
+              <span class="catalog__text">Цена</span>
+              <span class="catalog__text">400 Р</span>
+            </div>
+        </div>
+        <a href="#" class="btn btn--green">Заказать</a>
+      </div>
+      <hr class="grey-line">
+      <div class="catalog__item">
+        <img class="image catalog__img catalog__img--big" src="#" alt="Cat energy">
+        <div class="catalog__content-wrapper">
+          <h3 class="catalog__title">Cat energy slim 1000 г</h3>
+            <div class="catalog__row">
+              <span class="catalog__text">Обьем</span>
+              <span class="catalog__text">1000 г</span>
+            </div>
+            <div class="catalog__row">
+              <span class="catalog__text">Вкус</span>
+              <span class="catalog__text">Гречка</span>
+            </div>
+            <div class="catalog__row">
+              <span class="catalog__text">Цена</span>
+              <span class="catalog__text">700 Р</span>
+            </div>
+        </div>
+        <a href="#" class="btn btn--green">Заказать</a>
+      </div>
+      <hr class="grey-line">
+      <div class="catalog__item">
+        <img class="image catalog__img" src="#" alt="Cat energy">
+        <div class="catalog__content-wrapper">
+          <h3 class="catalog__title">Cat energy slim 500 г</h3>
+            <div class="catalog__row">
+              <span class="catalog__text">Обьем</span>
+              <span class="catalog__text">500 г</span>
+            </div>
+            <div class="catalog__row">
+              <span class="catalog__text">Вкус</span>
+              <span class="catalog__text">Рис</span>
+            </div>
+            <div class="catalog__row">
+              <span class="catalog__text">Цена</span>
+              <span class="catalog__text">500 Р</span>
             </div>
         </div>
         <a href="#" class="btn btn--green">Заказать</a>
@@ -177,8 +178,8 @@
       <hr class="grey-line">
       <div class="catalog__item">
         <a class="add-products__link" href="#"></a>
-        <h3 class="catalog__item-title">Показать еще 100500 товаров</h3>
-        <p class="catalog-item__text">На самом деле вкусов гораздо больше!</p>
+        <h3 class="catalog__title">Показать еще 100500 товаров</h3>
+        <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
         <a href="#" class="btn btn--grey" href="#">Показать все</a>
       </div>
     </section>
@@ -224,8 +225,8 @@
       <hr class="decoration-line">
     </section>
 
-    <div class="hero">
-      <p class="hero__text">Закажите все и получите чехол для кота в подарок!</p>
+    <div class="promo">
+      <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
     </div>
 
   </main>
@@ -242,9 +243,9 @@
       <img class="image logo logo--footer src=" #" alt="">
       <div class="socials">
         <ul class="socials__list">
-          <li class="socials-list__item list-item"><a href="#" class="list-item__link vk-link"><img src="#" alt="vk"></a></li>
-          <li class="socials-list__item list-item"><a href="#" class="list-item__link insta-link"><img src="#" alt="insta"></a></li>
-          <li class="socials-list__item list-item"><a href="#" class="list-item__link fb-link"><img src="#" alt="fb"></a></li>
+          <li class="socials__item"><a href="#" class="socials__link social__link--vk"><img src="#" alt="vk"></a></li>
+          <li class="socials__item"><a href="#" class="socials__link social__link--insta"><img src="#" alt="insta"></a></li>
+          <li class="socials__item"><a href="#" class="socials__link social__link--fb"><img src="#" alt="fb"></a></li>
         </ul>
       </div>
       <div class="copyright">
