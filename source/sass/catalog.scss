@@ -4,7 +4,7 @@
 }
 
 .add-products__link {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -83,14 +83,13 @@
 }
 
 .catalog__text {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   @include font(12px, 16px);
 
   &--two {
     padding-left: 25px;
   }
 }
-
 
 .btn {
   @include btn;
@@ -100,15 +99,13 @@
   }
 
   &--catalog {
-    margin: {
-      top: 15px;
-      bottom: 23px;
-    }
+    margin-top: 15px;
+    margin-bottom: 23px;
   }
 
   &--grey {
     background-color: $grey;
-    color: #000;
+    color: #000000;
     margin-top: 20px;
   }
 }

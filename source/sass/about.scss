@@ -8,11 +8,11 @@
 
 .about__text {
   position: relative;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   padding: 0 0 0 85px;
   margin-bottom: 30px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     width: 60px;
@@ -24,7 +24,6 @@
 }
 
 .about__text--icon {
-
   &-list,
   &-whater,
   &-eat,
@@ -33,7 +32,7 @@
   }
 
   &-list {
-    &:after {
+    &::after {
       position: absolute;
       content: url("/img/advantage-leaf@1x.png");
       top: 1px;
@@ -42,7 +41,7 @@
   }
 
   &-whater {
-    &:after {
+    &::after {
       position: absolute;
       content: url("/img/advantage-powder@1x.png");
       top: 2px;
@@ -51,7 +50,7 @@
   }
 
   &-eat {
-    &:after {
+    &::after {
       position: absolute;
       content: url("/img/advantage-dining@1x.png");
       top: 3px;
@@ -60,7 +59,7 @@
   }
 
   &-time {
-    &:after {
+    &::after {
       position: absolute;
       content: url("/img/advantage-clock@1x.png");
       top: 2px;

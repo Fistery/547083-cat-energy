@@ -3,11 +3,11 @@
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   box-sizing: border-box;
-  padding: 30px 0px 0 0px;
+  padding: 30px 0 0 0;
   width: 320px;
   text-align: center;
 
-  &:after {
+  &::after {
     position: absolute;
     content: url("/img/index-can-mobile@1x.png");
     top: 168px;
@@ -17,7 +17,7 @@
 
 .btn {
   @include btn;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 73px;
 
   &--hero {

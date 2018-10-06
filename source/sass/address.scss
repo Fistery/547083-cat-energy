@@ -20,7 +20,7 @@
 
   &--regular {
     @include font(14px, 20px);
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     text-transform: none;
     padding-top: 31px;
   }

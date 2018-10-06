@@ -10,6 +10,7 @@
 
 .additional-products__title {
   position: relative;
+
   @include font(24px, 24px);
   font-weight: 400;
   padding: 0;
@@ -28,11 +29,11 @@
 }
 
 .products-item__text {
-  font-family: Arial, sans-serif;
+  font-family: "Arial:", sans-serif;
   @include font(14px, 14px);
 
   &--bold {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
   }
