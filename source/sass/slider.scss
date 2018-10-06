@@ -1,0 +1,48 @@
+.slider__image {
+  margin-top: 40px;
+}
+
+.slider__image--before {
+  display: block;
+}
+
+.slider__image--after {
+  display: none;
+}
+
+.slider__text-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+}
+
+.slider__text {
+  @include font(16px, 20px);
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.slider__btn {
+  cursor: pointer;
+}
+
+.slider__line {
+  width: 84px;
+  height: 14px;
+  border: 1px solid $dark-grey;
+  border-radius: 15px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  padding: 3px 5px;
+}
+
+.slider__control {
+  width: 35px;
+  height: 6px;
+  background-color: $green;
+  border-radius: 5px;
+  &--after {
+    margin-left: auto;
+  }
+}

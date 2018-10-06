@@ -1,0 +1,36 @@
+body {
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=body.css.map */

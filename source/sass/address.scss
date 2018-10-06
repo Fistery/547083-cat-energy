@@ -1,0 +1,25 @@
+.address {
+  background-color: $grey;
+}
+
+.container--address{
+  display: flex;
+}
+
+.address__text {
+  @include font(16px, 20px);
+  width: 140px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding: {
+    top: 30px;
+    bottom: 30px;
+  }
+  &--regular {
+    @include font(14px, 20px);
+    font-family: Arial, sans-serif;
+    text-transform: none;
+    padding-top: 31px;
+  }
+}

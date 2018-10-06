@@ -6,25 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="">
       <nav class="navigation-list">
+        <div class="container position-container">
         <a href="" class="logo">
-          <img class="logo__img logo__img--header" src="#" alt="">
+          <img width="101" height="18" class="image logo__img logo__img--header" src="img/logo-mobile.svg" alt="">
         </a>
-        <button class="nav-btn nav-btn--open"></button>
+        <button class="nav-btn nav-btn--open" type="button"><img src="img/icon-mobile-menu.svg" alt="" class="image"></button>
+      </div>
         <ul class="navigation-list__dropdown dropdown-list">
           <li class="dropdown-list__item"><a class="dropdown-list__link">Главная</a></li>
           <li class="dropdown-list__item"><a href="catalog.html" class="dropdown-list__link">Каталог продукции</a></li>
           <li class="dropdown-list__item"><a href="form.html" class="dropdown-list__link">Подбор программы</a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
@@ -36,12 +39,12 @@
       <p class="promo-text promo-text--medium">
         Занялся собой? Займись и котом!
       </p>
-      <a class="btn btn--green" href="#">Подобрать программу</a>
+      <a class="btn btn--green btn--hero" href="#">Подобрать программу</a>
     </div>
     <section class="programs">
       <h2 class="visually-hidden">Подбор программы</h2>
-      <div class="programs__item programs__item--cat-down">
-        <h3 class="programs__title">Похудение</h3>
+      <div class="programs__item">
+        <p class="programs__title programs__title--cat-down">Похудение</p>
         <p class="programs__text">
           Ваш кот весит больше собаки и почти утратил
           способность лазить по деревьям? Пора на диету!
@@ -50,8 +53,8 @@
         <hr class="decoration-line decoration-line--dark-grey">
         <a class="programs__link" href="#">Каталог Slim</a>
       </div>
-      <div class="programs__item programs__item--cat-up">
-        <h3 class="programs__title">Набор массы</h3>
+      <div class="programs__item">
+        <p class="programs__title programs__title--cat-up">Набор массы</p>
         <p class="programs__text">
           Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -62,7 +65,7 @@
     </section>
     <section class="about">
       <div class="about-wrapper">
-        <h2 class="about__title">Как это работает</h2>
+        <p class="about__title">Как это работает</p>
         <p class="about__text about__text--icon-list">
           Функциональное питание содержит только полезные
           питательные вещества.
@@ -82,59 +85,90 @@
       </div>
     </section>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">
-        Борис сбросил 5кг за 2 месяца, просто заменив
-        свой обычный корм на Cat Energy Slim. Отличный
-        результат без изнуряющих тренировок! При этом он не
-        менял своих привычек и по прежнему спит по 16 часов в день.
-      </p>
-      <div class="example__content-wrapper">
-        <div class="example-info">
-          <p class="example-info__text example-info__text--bold">5 кг</p>
-          <p class="example-info__text">снижение веса</p>
+      <div class="div example-wrapper">
+        <p class="example__title">Живой пример</p>
+        <p class="example__text">
+          Борис сбросил 5кг за 2 месяца, просто заменив
+          свой обычный корм на Cat Energy Slim. Отличный
+          результат без изнуряющих тренировок! При этом он не
+          менял своих привычек и по прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__content-wrapper">
+          <div class="example-info">
+            <p class="example-info__text example-info__text--bold">5 кг</p>
+            <p class="example-info__text example-info__text--bgc">снижение веса</p>
+          </div>
+          <div class="example-info">
+            <p class="example-info__text example-info__text--bold"> 60 дней</p>
+            <p class="example-info__text example-info__text--bgc">затрачено времени</p>
+          </div>
         </div>
-        <div class="example-info">
-          <p class="example-info__text example-info__text--bold"> 60 дней</p>
-          <p class="examplet-info__text">затрачено времени</p>
-        </div>
+        <p class="example__text example__text--bold">Затраты на питание: 15 000 руб.</p>
       </div>
-      <p class="exapmple__text exapmple__text--bold">Затраты на питание: 15 000 руб.</p>
       <div class="example__slider slider">
-        <img class="image image-cat" src="#" alt="кот">
-        <div class="slider__text-wrapper">
-          <p class="slider__text">Было</p>
-          <div class="slider__line"></div>
-          <p class="slider__text">Стало</p>
+        <div class="slider__image slider__image--before">
+          <img width="311" height="232" class="image image-cat" src="img/before-mobile@1x.png" alt="толстый кот">
+          <div class="slider__text-wrapper">
+            <p class="slider__text">Было</p>
+            <div class="slider__line">
+              <a class="slider__btn">
+                <div class="slider__control slider__control--before"></div>
+              </a>
+            </div>
+            <p class="slider__text">Стало</p>
+          </div>
+        </div>
+        <div class="slider__image slider__image--after">
+          <img width="251" height="240" class="image image-cat" src="img/after-mobile@1x.png" alt="худой кот">
+          <div class="slider__text-wrapper">
+            <p class="slider__text">Было</p>
+            <div class="slider__line">
+              <a class="slider__btn">
+                <div class="slider__control slider__control--after"></div>
+              </a>
+            </div>
+            <p class="slider__text">Стало</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
       <div class="address">
-        <p class="address__text address__text--bold">Приглашаем к сотрудничеству диллеров!</p>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="map">
-        <img src="" alt="мы на карте" class="map">
-      </div>
-      <img class="image logo logo--footer src=" #" alt="">
-      <div class="socials">
-        <ul class="socials__list">
-          <li class="socials__item"><a href="#" class="socials__link socials__link--vk"><img src="#" alt="vk"></a></li>
-          <li class="socials__item"><a href="#" class="socials__link socials__link--insta"><img src="#" alt="insta"></a></li>
-          <li class="socials__item"><a href="#" class="socials__link socials__link--fb"><img src="#" alt="fb"></a></li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <a href="" class="copyright__link">
-          <span class="copyright__text">HTML Academy</span>
-          <img src="#" alt="academy logotype">
-        </a>
+          <div class="container container--address">
+        <p class="address__text">Приглашаем<br> к сотрудничеству диллеров!</p>
+        <p class="address__text address__text--regular">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
     </div>
+    <div class="map">
+      <img src="img/bg-map-mobile@1x.png" alt="мы на карте" class="map">
+      <div class="map__point">
+        <img width="55" height="49" src="img/map-pin.png" alt="" class="image image-point">
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <div class="container">
+        <a class="logo logo--footer" href="">
+          <img width="128" height="24" class="footer-logo" src="img/logo-footer.svg" alt="">
+        </a>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item"><a href="#" class="socials__link socials__link--vk"><img class="image" src="img/icon-vk-mobile.svg" alt="vk"></a></li>
+            <li class="socials__item"><a href="#" class="socials__link socials__link--insta"><img class="image" src="img/icon-insta-mobile.svg" alt="insta"></a></li>
+            <li class="socials__item"><a href="#" class="socials__link socials__link--fb"><img class="image" src="img/icon-fb-mobile.svg" alt="fb"></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a href="" class="copyright__link">
+            <span class="copyright__text">HTML Academy</span>
+            <div href="" class="copyright__logo">
+              <img class="image" src="img/logo-color-1.png" alt="academy logotype">
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
   </footer>
 
 </body>

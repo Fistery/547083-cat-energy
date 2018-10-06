@@ -1,0 +1,58 @@
+.socials__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: {
+    top: 1px solid $dark-grey;
+    bottom: 1px solid $dark-grey;
+  }
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.socials__item {
+  margin: 0 19px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+    &--vk {
+      width: 22px;
+      height: 12px;
+      padding-top: 5px;
+    }
+    &--insta {
+      width: 16px;
+      height: 16px;
+      padding-top: 3.5px;
+    }
+    &--fb {
+      width: 10px;
+      height: 19px;
+      padding-top: 1px;
+    }
+}
+
+.copyright__link {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.5;
+  padding: 15px 0;
+}
+
+.copyright__logo {
+  padding-top: 10px;
+  width:27px;
+  height: 34px;
+}
+
+
