@@ -4,10 +4,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   border: {
     top: 1px solid $dark-grey;
     bottom: 1px solid $dark-grey;
   }
+
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -21,21 +23,24 @@
   justify-content: center;
   align-items: center;
   opacity: 0.5;
-    &--vk {
-      width: 22px;
-      height: 12px;
-      padding-top: 5px;
-    }
-    &--insta {
-      width: 16px;
-      height: 16px;
-      padding-top: 3.5px;
-    }
-    &--fb {
-      width: 10px;
-      height: 19px;
-      padding-top: 1px;
-    }
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+    padding-top: 5px;
+  }
+
+  &--insta {
+    width: 16px;
+    height: 16px;
+    padding-top: 3.5px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+    padding-top: 1px;
+  }
 }
 
 .copyright__link {
@@ -51,8 +56,6 @@
 
 .copyright__logo {
   padding-top: 10px;
-  width:27px;
+  width: 27px;
   height: 34px;
 }
-
-

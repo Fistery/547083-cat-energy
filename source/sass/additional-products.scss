@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   padding: 30px 0;
+
   &::after {
     position: absolute;
     content: "";
@@ -29,6 +30,7 @@
 .products-item__text {
   font-family: Arial, sans-serif;
   @include font(14px, 14px);
+
   &--bold {
     font-family: "Oswald", Arial, sans-serif;
     text-transform: uppercase;
@@ -43,8 +45,8 @@
 
 .btn {
   @include btn;
+
   &--additional {
     margin-bottom: 17px;
   }
 }
-

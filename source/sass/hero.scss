@@ -6,6 +6,7 @@
   padding: 30px 0px 0 0px;
   width: 320px;
   text-align: center;
+
   &:after {
     position: absolute;
     content: url("/img/index-can-mobile@1x.png");
@@ -18,11 +19,13 @@
   @include btn;
   color: #fff;
   padding: 10px 73px;
+
   &--hero {
-  margin-top: 300px;
-  margin-bottom: 23px;
+    margin-top: 300px;
+    margin-bottom: 23px;
   }
+
   &--green {
-  background-color: $green;
+    background-color: $green;
   }
 }

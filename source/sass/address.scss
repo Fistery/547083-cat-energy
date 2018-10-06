@@ -2,7 +2,7 @@
   background-color: $grey;
 }
 
-.container--address{
+.container--address {
   display: flex;
 }
 
@@ -12,10 +12,12 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+
   padding: {
     top: 30px;
     bottom: 30px;
   }
+
   &--regular {
     @include font(14px, 20px);
     font-family: Arial, sans-serif;

@@ -11,6 +11,7 @@
   font-family: Arial, sans-serif;
   padding: 0 0 0 85px;
   margin-bottom: 30px;
+
   &:before {
     content: "";
     position: absolute;
@@ -23,12 +24,14 @@
 }
 
 .about__text--icon {
+
   &-list,
   &-whater,
   &-eat,
-  &-time{
+  &-time {
     position: relative;
   }
+
   &-list {
     &:after {
       position: absolute;
@@ -37,6 +40,7 @@
       left: 6px;
     }
   }
+
   &-whater {
     &:after {
       position: absolute;
@@ -45,6 +49,7 @@
       left: 5px;
     }
   }
+
   &-eat {
     &:after {
       position: absolute;
@@ -53,6 +58,7 @@
       left: 4px;
     }
   }
+
   &-time {
     &:after {
       position: absolute;
