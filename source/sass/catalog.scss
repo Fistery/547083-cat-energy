@@ -37,12 +37,6 @@
   display: flex;
 }
 
-.catalog {
-  &__text {
-    margin: 0;
-    padding: 0;
-  }
-
   &__title {
     @include font(16px, 20px);
     text-transform: uppercase;
@@ -83,6 +77,8 @@
 .catalog__text {
   font-family: "Arial", sans-serif;
   @include font(12px, 16px);
+  margin: 0;
+  padding: 0;
 
   &--two {
     padding-left: 25px;
