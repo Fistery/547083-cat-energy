@@ -65,7 +65,7 @@
   }
 }
 
-.form__input--radio:checked+.form__label--radio::after {
+.form__input--radio:checked + .form__label--radio::after {
   position: absolute;
   content: "";
   width: 12px;
@@ -77,7 +77,6 @@
 }
 
 .form__input {
-
   &--text,
   &--email,
   &--phone {
@@ -86,11 +85,10 @@
     height: 45px;
     box-sizing: border-box;
     padding: 15px;
-    border: none;
     border: 1px solid $light-grey;
 
     &::placeholder {
-      font-family: "Oswald", Arial, sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
     }
   }
 }
@@ -100,8 +98,9 @@
 
   &__title {
     position: relative;
-    @include font(24px, 24px);
     font-weight: 400;
+
+    @include font(24px, 24px);
 
     &::after {
       position: absolute;
@@ -118,8 +117,9 @@
 .textarea {
   &__title {
     position: relative;
-    @include font(24px, 24px);
     font-weight: 400;
+
+    @include font(24px, 24px);
 
     &::after {
       position: absolute;
@@ -128,14 +128,13 @@
       height: 3px;
       background-color: $green;
       top: 13px;
-      right: -20px
+      right: -20px;
     }
   }
 
   &__input {
     @include font(16px, 18px);
-    font-family: "Oswald", Arial, sans-serif;
-    border: none;
+    font-family: "Oswald", "Arial", sans-serif;
     border: 1px solid $light-grey;
     box-sizing: border-box;
     padding: 10px;
@@ -168,8 +167,9 @@
 
 .checkbox-input__title {
   position: relative;
-  @include font(24px, 24px);
   font-weight: 400;
+
+  @include font(24px, 24px);
 
   &::after {
     position: absolute;
@@ -208,17 +208,19 @@
   left: 6px;
 }
 
-.form__input--checkbox:checked+.checkbox-tick {
+.form__input--checkbox:checked + .checkbox-tick {
   display: block;
 }
 
 .form-btn {
   display: inline-block;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
+
   @include font(16px, 20px);
+
   border: none;
   background-color: $green;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   width: 280px;
   height: 40px;
@@ -226,8 +228,10 @@
 }
 
 .form-text {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
+
   @include font(14px, 16px);
+
   text-align: center;
   margin-top: 20px;
 }

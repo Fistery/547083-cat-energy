@@ -13,13 +13,15 @@
 }
 
 .example__text {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   width: 267px;
   padding-bottom: 20px;
 
   &--bold {
     font-family: "Oswald", "Arial", sans-serif;
+
     @include font(14px, 20px);
+
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -46,13 +48,17 @@
 
 .example-info__text {
   font-family: "Arial", sans-serif;
+
   @include font(12px, 12px);
+
   padding: 0;
   margin: 0;
 
   &--bold {
     font-family: "Oswald", "Arial", sans-serif;
+
     @include font(24px, 24px);
+
     text-transform: uppercase;
 
     padding: {

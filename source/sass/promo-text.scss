@@ -6,11 +6,12 @@
 
   &--medium {
     margin-top: 20px;
-    @include font(14px, 14px);
     text-transform: uppercase;
+
+    @include font(14px, 14px);
   }
 
   &--bold {
-    @include font(36px, 36px)
+    @include font(36px, 36px);
   }
 }
