@@ -29,6 +29,7 @@
 
 .products-item__text {
   font-family: "Arial:", sans-serif;
+  
   @include font(14px, 14px);
 
   &--bold {
