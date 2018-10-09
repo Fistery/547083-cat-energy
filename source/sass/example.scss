@@ -96,6 +96,7 @@
   .example__text {
     width: 680px;
     padding-bottom: 55px;
+
     @include font(16px, 24px);
 
     &--bold {
@@ -121,14 +122,12 @@
   }
 
   .example-info__text {
-
     @include font(12px, 12px);
 
     padding: 0;
     margin: 0;
 
     &--bold {
-
       @include font(30px, 37px);
 
       padding: 20px 0;
