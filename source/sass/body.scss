@@ -11,6 +11,21 @@ body {
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -24,6 +39,13 @@ body {
 .container {
   box-sizing: border-box;
   padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
 }
 
 .image {
@@ -41,3 +63,4 @@ body {
     color: $grey;
   }
 }
+

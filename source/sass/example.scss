@@ -34,6 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .example-info {
@@ -73,5 +74,72 @@
     width: 80px;
     background-color: $grey;
     top: 47px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example-wrapper {
+    @include box-sizing;
+    padding: 0 30px;
+  }
+
+  .example {
+    background-color: #ffffff;
+    border-top: 1px solid $light-grey;
+  }
+
+  .example__title {
+    @include font(60px, 60px);
+    padding-top: 0;
+  }
+
+  .example__text {
+    width: 680px;
+    padding-bottom: 55px;
+    @include font(16px, 24px);
+
+    &--bold {
+      @include font(20px, 20px);
+
+      width: 175px;
+      text-align: right;
+      margin-left: auto;
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+
+  .example__content-wrapper {
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .example-info {
+    width: 162px;
+    margin-right: 43px;
+  }
+
+  .example-info__text {
+
+    @include font(12px, 12px);
+
+    padding: 0;
+    margin: 0;
+
+    &--bold {
+
+      @include font(30px, 37px);
+
+      padding: 20px 0;
+    }
+
+    &--bgc {
+      position: absolute;
+      text-align: center;
+      width: 130px;
+      background-color: #ffffff;
+      top: 70px;
+    }
   }
 }

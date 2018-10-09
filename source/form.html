@@ -12,24 +12,25 @@
 
 <body>
 
-  <header class="header">
-    <div class="">
-      <nav class="navigation-list">
-        <div class="container position-container">
-          <a href="" class="logo">
-            <img width="101" height="18" class="image logo__img logo__img--header" src="img/logo-mobile.svg" alt="">
-          </a>
-          <button class="nav-btn nav-btn--open" type="button"><img src="img/icon-mobile-menu.svg" alt="" class="image"></button>
+    <header class="header">
+        <nav class="navigation-list">
+          <div class="container position-container">
+            <a href="" class="logo logo--mobile">
+              <img class="image logo__img logo__img--header" src="img/logo-mobile.svg" alt="">
+            </a>
+            <a href="" class="logo logo--desktop">
+                <img class="image logo__img logo__img--header" src="img/logo-desktop.svg" alt="">
+              </a>
+            <button class="nav-btn nav-btn--open" type="button"><img src="img/icon-mobile-menu.svg" alt="" class="image"></button>
+          </div>
+          <ul class="navigation-list__dropdown dropdown-list">
+            <li class="dropdown-list__item"><a href="index.html"class="dropdown-list__link">Главная</a></li>
+            <li class="dropdown-list__item"><a href="catalog.html" class="dropdown-list__link">Каталог продукции</a></li>
+            <li class="dropdown-list__item"><a class="dropdown-list__link active">Подбор программы</a></li>
+          </ul>
+        </nav>
         </div>
-        <ul class="navigation-list__dropdown dropdown-list">
-          <li class="dropdown-list__item"><a href="index.html" class="dropdown-list__link">Главная</a></li>
-          <li class="dropdown-list__item"><a href="catalog.html" class="dropdown-list__link">Каталог продукции</a></li>
-          <li class="dropdown-list__item"><a class="dropdown-list__link">Подбор программы</a></li>
-        </ul>
-      </nav>
-    </div>
-    </div>
-  </header>
+      </header>
 
   <main class="main-content contact-page">
     <div class="container">
@@ -56,7 +57,7 @@
       <div class="contact-form__radio">
         <div class="container">
           <input class="form__input form__input--radio visually-hidden" type="radio" name="weight" id="down" checked>
-          <label class="form__label form__label--radio"  for="down">Похудение</label>
+          <label class="form__label form__label--radio" for="down">Похудение</label>
           <input class="form__input form__input--radio visually-hidden" type="radio" name="weight" id="up">
           <label class="form__label form__label--radio" for="up">Набор массы</label>
           <input class="form__input form__input--radio visually-hidden" type="radio" name="weight" id="help">
@@ -68,20 +69,21 @@
         <div class="container">
           <h3 class="contacts-block__title">Контактные данные (владельца кота)</h3>
           <label class="form__label form__label--email">E-Mail:*
-              <svg class="icon-mail-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
-                <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
-              </svg>
+            <svg class="icon-mail-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+              <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" />
+            </svg>
             <input class="form__input form__input--email" type="email" name="email-input" placeholder="KUKLACHEV@GMAIL.COM">
           </label><br>
           <label class="form__label form__label--phone">Телефон:*
-              <svg class="icon-phone-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-                <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
-                <path
-                  d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+            <svg class="icon-phone-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+              <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
+              <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
                 c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
                 C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-                C7.8,20,8.1,19.7,8.1,19.4z"/>
-              </svg>
+                C7.8,20,8.1,19.7,8.1,19.4z" />
+            </svg>
             <input class="form__input form__input--phone" type="phone" name="number-input" placeholder="8 (960) 900-60-90">
           </label>
         </div>
@@ -95,76 +97,83 @@
       <div class="container">
         <div class="checkbox-input">
           <h3 class="checkbox-input__title">Дополнительно</h3>
+          <div class="checkbox__tablet-wrapp">
           <label class="form__label form__label--checkbox">Сахарозаменитель
             <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="sugar" checked>
-            <svg class="checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
-              <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
+            <svg class="checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
+              <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 " />
             </svg>
           </label>
           <label class="form__label form__label--checkbox">Питьевая вода
             <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="whater">
-            <svg class="checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
-              <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
+            <svg class="checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
+              <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 " />
             </svg>
           </label>
           <label class="form__label form__label--checkbox">Молоко
             <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="milk">
-            <svg class="checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
-              <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
+            <svg class="checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
+              <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 " />
             </svg>
           </label>
           <label class="form__label form__label--checkbox">Витамины
             <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="vitamins">
-            <svg class="checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
-              <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 "/>
+            <svg class="checkbox-tick" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 21.1 15.5" style="enable-background:new 0 0 21.1 15.5;" xml:space="preserve">
+              <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 " />
             </svg>
           </label>
         </div>
-        <button class="form-btn" type="submit">Отправить заявку</button>
-        <p class="form-text">* — Обязательные поля</p>
+        </div>
+        <div class="form-btn-wrapper">
+          <button class="form-btn" type="submit">Отправить заявку</button>
+          <p class="form-text">* — Обязательные поля</p>
+        </div>
       </div>
     </form>
   </main>
 
   <footer class="footer">
-      <div class="address">
-          <div class="container container--address">
-        <p class="address__text">Приглашаем<br> к сотрудничеству диллеров!</p>
-        <p class="address__text address__text--regular">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-    </div>
-    <div class="map">
-      <img src="img/bg-map-mobile@1x.png" alt="мы на карте" class="map">
-      <div class="map__point">
-        <img width="55" height="49" src="img/map-pin.png" alt="" class="image image-point">
-      </div>
-    </div>
-    <nav class="footer-nav">
-      <div class="container">
-        <a class="logo logo--footer" href="">
-          <img width="128" height="24" class="footer-logo" src="img/logo-footer.svg" alt="">
-        </a>
-        <div class="socials">
-          <ul class="socials__list">
-            <li class="socials__item"><a href="#" class="socials__link socials__link--vk"><img class="image" src="img/icon-vk-mobile.svg"
-                  alt="vk"></a></li>
-            <li class="socials__item"><a href="#" class="socials__link socials__link--insta"><img class="image" src="img/icon-insta-mobile.svg"
-                  alt="insta"></a></li>
-            <li class="socials__item"><a href="#" class="socials__link socials__link--fb"><img class="image" src="img/icon-fb-mobile.svg"
-                  alt="fb"></a></li>
-          </ul>
+      <div class="address address--grey">
+        <div class="container container--address">
+          <p class="address__text">Приглашаем<br> к сотрудничеству диллеров!</p>
+          <p class="address__text address__text--regular">ул. Большая Конюшенная, д. 19/8 <br class="address__text--br"><br class="address__text--br"> Санкт-Петербург</p>
         </div>
-        <div class="copyright">
-          <a href="" class="copyright__link">
-            <span class="copyright__text">HTML Academy</span>
-            <div href="" class="copyright__logo">
-              <img class="image" src="img/logo-color-1.png" alt="academy logotype">
-            </div>
+      </div>
+      <div class="map">
+        <img class="map__mobile" src="img/bg-map-mobile@1x.png" alt="мы на карте" class="map">
+        <img class="map__tablet" src="img/bg-map-tablet@1x.png" alt="мы на карте">
+        <div class="map__point">
+          <img width="55" height="49" src="img/map-pin.png" alt="" class="image image-point">
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <div class="container footer-nav--tablet">
+          <a class="logo logo--footer" href="">
+            <img width="128" height="24" class="footer-logo" src="img/logo-footer.svg" alt="">
           </a>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item"><a href="#" class="socials__link socials__link--vk"><img class="image" src="img/icon-vk-mobile.svg"
+                    alt="vk"></a></li>
+              <li class="socials__item"><a href="#" class="socials__link socials__link--insta"><img class="image" src="img/icon-insta-mobile.svg"
+                    alt="insta"></a></li>
+              <li class="socials__item"><a href="#" class="socials__link socials__link--fb"><img class="image" src="img/icon-fb-mobile.svg"
+                    alt="fb"></a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <a href="" class="copyright__link">
+              <span class="copyright__text">HTML Academy</span>
+              <svg class="copyright__logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
-  </footer>
+      </nav>
+    </footer>
 
 </body>
 

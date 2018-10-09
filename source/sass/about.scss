@@ -23,6 +23,10 @@
   }
 }
 
+.about__bg {
+  display: none;
+}
+
 .about__text--icon {
   &-list,
   &-whater,
@@ -64,6 +68,110 @@
       content: url("/img/advantage-clock@1x.png");
       top: 2px;
       left: 5px;
+    }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding: 0 30px;
+    padding-bottom: 90px;
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .about__title {
+    @include font(60px, 60px);
+  }
+
+  .about__text {
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 190px;
+    @include font(16px, 24px);
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: -130px;
+      left: 0;
+    }
+  }
+
+  .about__text-wrapper {
+    position: relative;
+
+    &:nth-child(odd) {
+      margin-right: 180px;
+      width: 204px;
+    }
+
+    &:nth-child(even) {
+      width: 223px;
+    }
+  }
+
+  .about__bg {
+    display: block;
+    position: absolute;
+    color: $grey;
+    z-index: -1;
+
+    @include font(281px, 281px);
+
+    &--one {
+      top: -250px;
+      right: -25px;
+    }
+    &--two {
+      top: -250px;
+      right: -25px;
+    }
+    &--three {
+      top: -180px;
+      right: -25px;
+    }
+    &--four {
+      top: -180px;
+      right: -25px;
+    }
+  }
+
+  .about__text--icon {
+
+    &-list {
+      &::after {
+        top: -115px;
+        left: 14px;
+      }
+    }
+
+    &-whater {
+      &::after {
+        top: -115px;
+        left: 15px;
+      }
+    }
+
+    &-eat {
+      margin-top: 255px;
+
+      &::after {
+        top: -115px;
+        left: 13px;
+      }
+    }
+
+    &-time {
+      margin-top: 255px;
+
+      &::after {
+        top: -115px;
+        left: 13px;
+      }
     }
   }
 }

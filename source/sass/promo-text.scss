@@ -15,3 +15,24 @@
     @include font(36px, 36px);
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .promo-text {
+    color: #000000;
+    text-align: left;
+    width: 427px;
+
+    &--medium {
+      margin-top: 35px;
+
+      @include font(20px, 20px);
+    }
+
+    &--bold {
+      margin-top: 30px;
+
+      @include font(60px, 60px);
+    }
+  }
+}

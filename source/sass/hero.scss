@@ -29,3 +29,37 @@
     background-color: $green;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-image: url("/img/index-can-tablet@1x.jpg");
+    background-position: 0 190px;
+    width: 708px;
+    min-height: 840px;
+    text-align: left;
+    padding: 0 0 0 120px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100px;
+      left: 20px;
+    }
+  }
+
+  .btn {
+    @include btn;
+    color: #ffffff;
+    padding: 15px 25px;
+
+    @include font(20px, 20px);
+
+    &--hero {
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+  }
+}

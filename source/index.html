@@ -13,21 +13,22 @@
 <body>
 
   <header class="header">
-    <div class="">
-      <nav class="navigation-list">
-        <div class="container position-container">
-        <a href="" class="logo">
-          <img width="101" height="18" class="image logo__img logo__img--header" src="img/logo-mobile.svg" alt="">
+    <nav class="navigation-list">
+      <div class="container position-container">
+        <a href="" class="logo logo--mobile">
+          <img class="image logo__img logo__img--header" src="img/logo-mobile.svg" alt="">
         </a>
+        <a href="" class="logo logo--desktop">
+            <img class="image logo__img logo__img--header" src="img/logo-desktop.svg" alt="">
+          </a>
         <button class="nav-btn nav-btn--open" type="button"><img src="img/icon-mobile-menu.svg" alt="" class="image"></button>
       </div>
-        <ul class="navigation-list__dropdown dropdown-list">
-          <li class="dropdown-list__item"><a class="dropdown-list__link">Главная</a></li>
-          <li class="dropdown-list__item"><a href="catalog.html" class="dropdown-list__link">Каталог продукции</a></li>
-          <li class="dropdown-list__item"><a href="form.html" class="dropdown-list__link">Подбор программы</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="navigation-list__dropdown dropdown-list">
+        <li class="dropdown-list__item"><a class="dropdown-list__link active">Главная</a></li>
+        <li class="dropdown-list__item"><a href="catalog.html" class="dropdown-list__link">Каталог продукции</a></li>
+        <li class="dropdown-list__item"><a href="form.html" class="dropdown-list__link">Подбор программы</a></li>
+      </ul>
+    </nav>
     </div>
   </header>
 
@@ -64,24 +65,36 @@
       </div>
     </section>
     <section class="about">
-      <div class="about-wrapper">
         <p class="about__title">Как это работает</p>
+        <div class="about-wrapper">
+          <div class="about__text-wrapper">
         <p class="about__text about__text--icon-list">
           Функциональное питание содержит только полезные
           питательные вещества.
         </p>
+        <p class="about__bg about__bg--one">1</p>
+        </div>
+        <div class="about__text-wrapper">
         <p class="about__text about__text--icon-whater">
           Выпускается в виде порошка, который нужно лишь
           залить кипятком и готово.
         </p>
+        <p class="about__bg about__bg--two">2</p>
+        </div>
+        <div class="about__text-wrapper">
         <p class="about__text about__text--icon-eat">
           Замените один-два приема обычной еды на наше
           функциональное питание.
         </p>
+        <p class="about__bg about__bg--three">3</p>
+        </div>
+        <div class="about__text-wrapper">
         <p class="about__text about__text--icon-time">
           Уже через месяц наслаждайтесь изменениями к
           лучшему вашего питомца!
         </p>
+        <p class="about__bg about__bg--four">4</p>
+        </div>
       </div>
     </section>
     <section class="example">
@@ -102,11 +115,11 @@
             <p class="example-info__text example-info__text--bold"> 60 дней</p>
             <p class="example-info__text example-info__text--bgc">затрачено времени</p>
           </div>
+          <p class="example__text example__text--bold">Затраты на питание: 15 000 руб.</p>
         </div>
-        <p class="example__text example__text--bold">Затраты на питание: 15 000 руб.</p>
       </div>
-      <div class="example__slider slider">
-        <div class="slider__image slider__image--before">
+      <div class="example__slider slider slider__mobile">
+        <div class="slider__image slider__image--mobile-before active">
           <img width="311" height="232" class="image image-cat" src="img/before-mobile@1x.png" alt="толстый кот">
           <div class="slider__text-wrapper">
             <p class="slider__text">Было</p>
@@ -118,7 +131,7 @@
             <p class="slider__text">Стало</p>
           </div>
         </div>
-        <div class="slider__image slider__image--after">
+        <div class="slider__image slider__image--mobile-after">
           <img width="251" height="240" class="image image-cat" src="img/after-mobile@1x.png" alt="худой кот">
           <div class="slider__text-wrapper">
             <p class="slider__text">Было</p>
@@ -130,41 +143,65 @@
             <p class="slider__text">Стало</p>
           </div>
         </div>
+        </div>
+      <div class="example__slider slider slider__tablet">
+        <div class="slider__image slider__image--tablet-before">
+          <div class="tablet-wrapp--before">
+          <img width="677" height="499" class="image image-cat" src="img/before-tablet@1x.png" alt="толстый кот">
+        </div>
+        </div>
+        <div class="slider__image slider__image--tablet-after">
+            <div class="tablet-wrapp--after">
+                <img width="545" height="517" class="image image-cat" src="img/after-tablet@1x.png" alt="худой кот">
+            </div>
+        </div>
+        <div class="grey-bg"></div>
+        <div class="slider__text-wrapper">
+            <p class="slider__text">Было</p>
+            <div class="slider__line">
+              <a class="slider__btn">
+                <div class="slider__control slider__control--after"></div>
+              </a>
+            </div>
+            <p class="slider__text">Стало</p>
+          </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-      <div class="address">
-          <div class="container container--address">
+    <div class="address">
+      <div class="container container--address">
         <p class="address__text">Приглашаем<br> к сотрудничеству диллеров!</p>
-        <p class="address__text address__text--regular">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="address__text address__text--regular">ул. Большая Конюшенная, д. 19/8 <br class="address__text--br"><br class="address__text--br"> Санкт-Петербург</p>
       </div>
     </div>
     <div class="map">
-      <img src="img/bg-map-mobile@1x.png" alt="мы на карте" class="map">
+      <img class="map__mobile" src="img/bg-map-mobile@1x.png" alt="мы на карте" class="map">
+      <img class="map__tablet" src="img/bg-map-tablet@1x.png" alt="мы на карте">
       <div class="map__point">
         <img width="55" height="49" src="img/map-pin.png" alt="" class="image image-point">
       </div>
     </div>
     <nav class="footer-nav">
-      <div class="container">
+      <div class="container footer-nav--tablet">
         <a class="logo logo--footer" href="">
           <img width="128" height="24" class="footer-logo" src="img/logo-footer.svg" alt="">
         </a>
         <div class="socials">
           <ul class="socials__list">
-            <li class="socials__item"><a href="#" class="socials__link socials__link--vk"><img class="image" src="img/icon-vk-mobile.svg" alt="vk"></a></li>
-            <li class="socials__item"><a href="#" class="socials__link socials__link--insta"><img class="image" src="img/icon-insta-mobile.svg" alt="insta"></a></li>
-            <li class="socials__item"><a href="#" class="socials__link socials__link--fb"><img class="image" src="img/icon-fb-mobile.svg" alt="fb"></a></li>
+            <li class="socials__item"><a href="#" class="socials__link socials__link--vk"><img class="image" src="img/icon-vk-mobile.svg"
+                  alt="vk"></a></li>
+            <li class="socials__item"><a href="#" class="socials__link socials__link--insta"><img class="image" src="img/icon-insta-mobile.svg"
+                  alt="insta"></a></li>
+            <li class="socials__item"><a href="#" class="socials__link socials__link--fb"><img class="image" src="img/icon-fb-mobile.svg"
+                  alt="fb"></a></li>
           </ul>
         </div>
         <div class="copyright">
           <a href="" class="copyright__link">
             <span class="copyright__text">HTML Academy</span>
-            <div href="" class="copyright__logo">
-              <img class="image" src="img/logo-color-1.png" alt="academy logotype">
-            </div>
+            <svg class="copyright__logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
           </a>
         </div>
       </div>

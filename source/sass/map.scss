@@ -1,5 +1,13 @@
 .map {
   position: relative;
+
+  &__mobile {
+    display: block;
+  }
+
+  &__tablet {
+    display: none;
+  }
 }
 
 .map__point {
@@ -8,4 +16,24 @@
   left: 131px;
   width: 55px;
   height: 53px;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    &__mobile {
+      display: none;
+    }
+
+    &__tablet {
+      display: block;
+    }
+  }
+
+  .map__point {
+    position: absolute;
+    top: 153px;
+    left: 338px;
+    width: 113px;
+    height: 106px;
+  }
 }

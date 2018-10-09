@@ -24,3 +24,26 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("/img/gift-photo-tablet@1x.jpg");
+    margin-top: 60px;
+
+    &__text {
+      text-align: left;
+      padding-top: 75px;
+      padding-bottom: 65px;
+      margin-left: 422px;
+
+      &::before {
+        content: url("/img/gift-white.png");
+        width: 58px;
+        height: 61px;
+        position: absolute;
+        top: 65px;
+        left: -335px;
+      }
+    }
+  }
+}
