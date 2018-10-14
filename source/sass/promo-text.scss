@@ -35,3 +35,25 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo-text {
+    color: #000000;
+    text-align: left;
+    width: 427px;
+    margin-left: 30px;
+
+    &--medium {
+      margin-top: 40px;
+
+      @include font(20px, 20px);
+    }
+
+    &--bold {
+      margin-top: 0;
+      padding-top: 200px;
+
+      @include font(60px, 60px);
+    }
+  }
+}

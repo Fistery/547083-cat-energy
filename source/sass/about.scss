@@ -21,21 +21,15 @@
     top: -3px;
     left: 0;
   }
-}
 
-.about__bg {
-  display: none;
-}
-
-.about__text--icon {
-  &-list,
-  &-whater,
-  &-eat,
-  &-time {
+  &--icon-list,
+  &--icon-whater,
+  &--icon-eat,
+  &--icon-time {
     position: relative;
   }
 
-  &-list {
+  &--icon-list {
     &::after {
       position: absolute;
       content: url("/img/advantage-leaf@1x.png");
@@ -44,7 +38,7 @@
     }
   }
 
-  &-whater {
+  &--icon-whater {
     &::after {
       position: absolute;
       content: url("/img/advantage-powder@1x.png");
@@ -53,7 +47,7 @@
     }
   }
 
-  &-eat {
+  &--icon-eat {
     &::after {
       position: absolute;
       content: url("/img/advantage-dining@1x.png");
@@ -62,7 +56,7 @@
     }
   }
 
-  &-time {
+  &--icon-time {
     &::after {
       position: absolute;
       content: url("/img/advantage-clock@1x.png");
@@ -72,16 +66,24 @@
   }
 }
 
+.about__desktop-br {
+  display: none;
+}
+
+.about__bg {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .about {
     padding: 0 30px;
     padding-bottom: 90px;
+  }
 
-    &-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .about__title {
@@ -100,6 +102,38 @@
       height: 80px;
       top: -130px;
       left: 0;
+    }
+
+    &--icon-list {
+      &::after {
+        top: -115px;
+        left: 14px;
+      }
+    }
+
+    &--icon-whater {
+      &::after {
+        top: -115px;
+        left: 15px;
+      }
+    }
+
+    &--icon-eat {
+      margin-top: 255px;
+
+      &::after {
+        top: -115px;
+        left: 13px;
+      }
+    }
+
+    &--icon-time {
+      margin-top: 255px;
+
+      &::after {
+        top: -115px;
+        left: 13px;
+      }
     }
   }
 
@@ -144,38 +178,107 @@
       right: -25px;
     }
   }
+}
 
-  .about__text--icon {
-    &-list {
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0 85px;
+    padding-bottom: 90px;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about__text-wrapper {
+    &:nth-child(odd) {
+      margin-right: 0;
+      width: 245px;
+      margin-top: 150px;
+    }
+
+    &:nth-child(even) {
+      width: 245px;
+      margin-top: 150px;
+    }
+  }
+
+  .about__text {
+    margin-top: 0;
+
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: -110px;
+      left: 0;
+    }
+
+    &--icon-list {
       &::after {
-        top: -115px;
+        top: -95px;
         left: 14px;
       }
     }
 
-    &-whater {
+    &--icon-whater {
       &::after {
-        top: -115px;
+        top: -95px;
         left: 15px;
       }
     }
 
-    &-eat {
-      margin-top: 255px;
+    &--icon-eat {
+      margin-top: 0;
 
       &::after {
-        top: -115px;
+        top: -95px;
         left: 13px;
       }
     }
 
-    &-time {
-      margin-top: 255px;
+    &--icon-time {
+      margin-top: 0;
 
       &::after {
-        top: -115px;
+        top: -95px;
         left: 13px;
       }
+    }
+  }
+
+  .about__desktop-br {
+    display: block;
+  }
+
+  .about__bg {
+    display: block;
+    position: absolute;
+    color: $grey;
+    z-index: -1;
+
+    @include font(281px, 281px);
+
+    &--one {
+      top: -430px;
+      right: 15px;
+    }
+
+    &--two {
+      top: -430px;
+      right: 0;
+    }
+
+    &--three {
+      top: -430px;
+      right: 0;
+    }
+
+    &--four {
+      top: -430px;
+      right: 0;
     }
   }
 }

@@ -1,5 +1,6 @@
 @import "variables.scss";
-@import "body.scss";
+@import "font.scss";
+@import "scaffolding.scss";
 @import "navigation-list.scss";
 @import "hero.scss";
 @import "promo-text";
@@ -14,5 +15,11 @@
 @import "copyright.scss";
 @import "catalog.scss";
 @import "additional-products.scss";
+@import "products-item.scss";
 @import "promo.scss";
 @import "contact-page.scss";
+@import "form.scss";
+@import "contacts-block.scss";
+@import "textarea.scss";
+@import "checkbox-input.scss";
+@import "dropdown-list.scss";

@@ -15,21 +15,6 @@
   }
 }
 
-.btn {
-  @include btn;
-  color: #ffffff;
-  padding: 10px 73px;
-
-  &--hero {
-    margin-top: 300px;
-    margin-bottom: 23px;
-  }
-
-  &--green {
-    background-color: $green;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .hero {
     background-image: url("/img/index-can-tablet@1x.jpg");
@@ -46,21 +31,23 @@
       left: 20px;
     }
   }
+}
 
-  .btn {
-    @include btn;
-    color: #ffffff;
-    padding: 15px 25px;
+@media (min-width: $desktop-width) {
+  .hero {
+    background-image: url("/img/index-background-desktop@1x.jpg");
+    background-position: top right;
+    background-clip: rect(auto, auto, auto, 930px);
+    width: 1440px;
+    min-height: 840px;
+    text-align: left;
+    padding: 0 0 0 120px;
 
-    @include font(20px, 20px);
-
-    &--hero {
-      margin-top: 40px;
-      margin-bottom: 0;
-    }
-
-    &--green {
-      background-color: $green;
+    &::after {
+      position: absolute;
+      content: url("/img/index-can-desktop@1x.png");
+      top: 150px;
+      left: 560px;
     }
   }
 }

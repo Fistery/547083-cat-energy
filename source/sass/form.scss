@@ -1,0 +1,171 @@
+.form__label {
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--radio {
+    position: relative;
+    padding: 10px 0 10px 45px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      border: 1px solid #dddddd;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.form__label--radio:hover {
+  &::before {
+    border-color: $light-grey;
+  }
+}
+
+.form__input--radio:checked + .form__label--radio::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: $green;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+
+.form__input {
+  &--text,
+  &--email,
+  &--phone {
+    flex-grow: 1;
+    margin-left: 15px;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid $grey;
+
+    &::placeholder {
+      font-family: "Oswald", "Arial", sans-serif;
+    }
+  }
+}
+
+.form__input--mobile-width {
+  width: 100px;
+}
+
+.form__btn {
+  display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+
+  @include font(16px, 20px);
+
+  border: none;
+  background-color: $green;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 280px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.form__btn:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form__btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__text {
+  font-family: "Arial", sans-serif;
+
+  @include font(14px, 16px);
+
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form__input:hover {
+  border-color: $light-grey;
+}
+
+.form__input:focus {
+  outline-color: #000000;
+}
+
+.form__input:focus + .contacts-block__svg {
+  fill: $green;
+}
+
+.form__input:invalid {
+  outline-color: #ff8282;
+}
+
+.form__input:invalid + .contacts-block__svg {
+  fill: #ff8282;
+}
+
+.form__input:disabled + .form__label {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .form__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 525px;
+  }
+
+  .form__btn {
+    @include font(20px, 20px);
+    width: 280px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 65px;
+  }
+
+  .form__text {
+    font-family: "Arial", sans-serif;
+
+    @include font(16px, 16px);
+
+    text-align: center;
+    margin-top: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-row {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .form__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+  }
+
+  .form__btn {
+    @include font(20px, 20px);
+    width: 657px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 65px;
+  }
+
+  .form__text {
+    width: 180px;
+    margin-left: 60px;
+    white-space: nowrap;
+  }
+}

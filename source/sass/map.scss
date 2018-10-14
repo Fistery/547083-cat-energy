@@ -8,6 +8,10 @@
   &__tablet {
     display: none;
   }
+
+  &__desktop {
+    display: none;
+  }
 }
 
 .map__point {
@@ -27,12 +31,40 @@
     &__tablet {
       display: block;
     }
+
+    &__desktop {
+      display: none;
+    }
   }
 
   .map__point {
     position: absolute;
     top: 153px;
     left: 338px;
+    width: 113px;
+    height: 106px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    &__mobile {
+      display: none;
+    }
+
+    &__tablet {
+      display: none;
+    }
+
+    &__desktop {
+      display: block;
+    }
+  }
+
+  .map__point {
+    position: absolute;
+    top: 156px;
+    left: 1003px;
     width: 113px;
     height: 106px;
   }

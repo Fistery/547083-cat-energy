@@ -1,0 +1,45 @@
+.products-item__text {
+  font-family: "Arial:", sans-serif;
+
+  @include font(14px, 14px);
+
+  &--bold {
+    font-family: "Oswald", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}
+
+.products-item__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .products-item__text {
+    @include font(16px, 20px);
+
+    &--bold {
+      position: absolute;
+
+      @include font(20px, 20px);
+      top: 20px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 52px;
+    }
+  }
+
+  .products-item__content-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products-item__text--bold {
+    margin: 0;
+    margin-top: 7px;
+  }
+}

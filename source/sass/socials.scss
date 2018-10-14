@@ -43,6 +43,19 @@
   }
 }
 
+.socials__svg {
+  fill: #666666;
+}
+
+.socials__link:hover .socials__svg {
+  fill: #79be4f;
+}
+
+.socials__link:active .socials__svg {
+  fill: #79be4f;
+  opacity: 0.5;
+}
+
 @media (min-width: $tablet-width) {
   .socials__list {
     display: flex;
@@ -79,5 +92,11 @@
       height: 28px;
       padding-top: 1px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials__list {
+    margin-right: 340px;
   }
 }

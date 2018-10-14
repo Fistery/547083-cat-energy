@@ -1,4 +1,4 @@
-.example-wrapper {
+.example__wrapper {
   @include box-sizing;
 }
 
@@ -37,7 +37,7 @@
   flex-wrap: wrap;
 }
 
-.example-info {
+.example__info {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@
   width: 124px;
 }
 
-.example-info__text {
+.example__info-text {
   font-family: "Arial", sans-serif;
 
   @include font(12px, 12px);
@@ -68,7 +68,7 @@
     }
   }
 
-  &--bgc {
+  &--bg-grey {
     position: absolute;
     text-align: center;
     width: 80px;
@@ -77,8 +77,12 @@
   }
 }
 
+.example__bg-grey {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .example-wrapper {
+  .example__wrapper {
     @include box-sizing;
     padding: 0 30px;
   }
@@ -116,12 +120,12 @@
     flex-wrap: nowrap;
   }
 
-  .example-info {
+  .example__info {
     width: 162px;
     margin-right: 43px;
   }
 
-  .example-info__text {
+  .example__info-text {
     @include font(12px, 12px);
 
     padding: 0;
@@ -133,12 +137,90 @@
       padding: 20px 0;
     }
 
-    &--bgc {
+    &--bg-grey {
       position: absolute;
       text-align: center;
       width: 130px;
       background-color: #ffffff;
       top: 70px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+    box-sizing: border-box;
+    padding: 0 70px;
+    margin-bottom: 70px;
+    background-color: transparent;
+  }
+
+  .example__wrapper {
+    @include box-sizing;
+    padding: 0;
+  }
+
+  .example__title {
+    @include font(60px, 60px);
+    text-transform: none;
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  .example__content-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 365px;
+  }
+
+  .example__text {
+    margin-top: 130px;
+    width: 435px;
+    margin-bottom: 0;
+
+    &--bold {
+      font-family: "Oswald", "Arial", sans-serif;
+
+      @include font(20px, 20px);
+
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .example__info {
+    width: 162px;
+    margin-right: 0;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  .example__bg-grey {
+    display: block;
+    position: absolute;
+    background-color: $grey;
+    height: 560px;
+    width: 1440px;
+    bottom: -200px;
+    left: 0;
+    z-index: -1;
+  }
+
+  .example__info-text {
+    &--bg-grey {
+      background-color: $grey;
     }
   }
 }

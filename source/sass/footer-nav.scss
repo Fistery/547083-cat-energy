@@ -4,10 +4,11 @@
 }
 
 
-.logo--footer {
+.footer__logo {
   display: inline-block;
   padding: 40px 76px;
 }
+
 
 @media (min-width: $tablet-width) {
   .footer-nav {
@@ -18,14 +19,8 @@
     }
   }
 
-  .logo {
-    width: 130px;
-    flex-grow: 0;
-
-    &--footer {
-      display: inline-block;
-      padding: 40px 0;
-      width: 130px;
-    }
+  .footer__logo {
+    display: inline-block;
+    padding: 40px 0;
   }
 }
