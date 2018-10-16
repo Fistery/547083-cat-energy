@@ -17,16 +17,6 @@
   width: 140px;
 }
 
-.catalog__img {
-  &--mobile {
-    display: block;
-  }
-
-  &--tablet {
-    display: none;
-  }
-}
-
 .products__add-link {
   color: #000000;
   text-decoration: none;
@@ -151,10 +141,6 @@
   }
 
   .catalog__img {
-    &--mobile {
-      display: none;
-    }
-
     &--tablet {
       display: block;
       position: absolute;

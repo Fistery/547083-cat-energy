@@ -107,10 +107,6 @@ body {
   width: 200px;
   margin-top: 10px;
   margin-bottom: 15px;
-
-  &--desktop {
-    display: none;
-  }
 }
 
 .logo:hover {
@@ -163,10 +159,7 @@ body {
     width: 200px;
     padding: 0;
     margin: 0;
-
-    &--mobile {
-      display: none;
-    }
+    margin-top: 17px;
   }
 
   .position-container {

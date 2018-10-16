@@ -81,7 +81,7 @@
 
   .grey-bg {
     height: 462px;
-    background-color: $grey;
+    background-image: linear-gradient(to right, $grey 49.5%, $lighten-grey 49.5%);
     margin-top: 246px;
   }
 

@@ -1,17 +1,5 @@
 .map {
   position: relative;
-
-  &__mobile {
-    display: block;
-  }
-
-  &__tablet {
-    display: none;
-  }
-
-  &__desktop {
-    display: none;
-  }
 }
 
 .map__point {
@@ -23,20 +11,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .map {
-    &__mobile {
-      display: none;
-    }
-
-    &__tablet {
-      display: block;
-    }
-
-    &__desktop {
-      display: none;
-    }
-  }
-
   .map__point {
     position: absolute;
     top: 153px;
@@ -47,20 +21,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .map {
-    &__mobile {
-      display: none;
-    }
-
-    &__tablet {
-      display: none;
-    }
-
-    &__desktop {
-      display: block;
-    }
-  }
-
   .map__point {
     position: absolute;
     top: 156px;

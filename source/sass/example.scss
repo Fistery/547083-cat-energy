@@ -210,7 +210,7 @@
   .example__bg-grey {
     display: block;
     position: absolute;
-    background-color: $grey;
+    background-image: linear-gradient(to right, $grey 73.8%, $lighten-grey 73.8%);
     height: 560px;
     width: 1440px;
     bottom: -200px;
