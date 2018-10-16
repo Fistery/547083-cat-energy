@@ -1,0 +1,59 @@
+.promo-text {
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  &--medium {
+    margin-top: 20px;
+    text-transform: uppercase;
+
+    @include font(14px, 14px);
+  }
+
+  &--bold {
+    @include font(36px, 36px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo-text {
+    color: #000000;
+    text-align: left;
+    width: 427px;
+
+    &--medium {
+      margin-top: 35px;
+
+      @include font(20px, 20px);
+    }
+
+    &--bold {
+      margin-top: 30px;
+
+      @include font(60px, 60px);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-text {
+    color: #000000;
+    text-align: left;
+    width: 427px;
+    margin-left: 30px;
+
+    &--medium {
+      margin-top: 40px;
+
+      @include font(20px, 20px);
+    }
+
+    &--bold {
+      margin-top: 0;
+      padding-top: 200px;
+
+      @include font(60px, 60px);
+    }
+  }
+}

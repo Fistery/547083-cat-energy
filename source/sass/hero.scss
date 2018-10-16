@@ -1,0 +1,53 @@
+.hero {
+  position: relative;
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 30px 0 0 0;
+  width: 320px;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    content: url("/img/index-can-mobile@1x.png");
+    top: 168px;
+    left: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-image: url("/img/index-can-tablet@1x.jpg");
+    background-position: 0 190px;
+    width: 708px;
+    min-height: 840px;
+    text-align: left;
+    padding: 0 0 0 120px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100px;
+      left: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    background-image: url("/img/index-background-desktop@1x.jpg");
+    background-position: top right;
+    background-clip: rect(auto, auto, auto, 930px);
+    width: 1440px;
+    min-height: 840px;
+    text-align: left;
+    padding: 0 0 0 120px;
+
+    &::after {
+      position: absolute;
+      content: url("/img/index-can-desktop@1x.png");
+      top: 150px;
+      left: 560px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.footer-nav {
+  position: relative;
+  background-color: $grey;
+}
+
+
+.footer__logo {
+  display: inline-block;
+  padding: 40px 76px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .footer-nav {
+    &--tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .footer__logo {
+    display: inline-block;
+    padding: 40px 0;
+  }
+}

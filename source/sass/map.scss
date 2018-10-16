@@ -1,0 +1,31 @@
+.map {
+  position: relative;
+}
+
+.map__point {
+  position: absolute;
+  top: 181px;
+  left: 131px;
+  width: 55px;
+  height: 53px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__point {
+    position: absolute;
+    top: 153px;
+    left: 338px;
+    width: 113px;
+    height: 106px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__point {
+    position: absolute;
+    top: 156px;
+    left: 1003px;
+    width: 113px;
+    height: 106px;
+  }
+}

@@ -1,0 +1,119 @@
+.navigation-list {
+  position: relative;
+}
+
+.navigation-list__btn {
+  position: absolute;
+  border: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+  top: 18px;
+  right: 20px;
+}
+
+.navigation-list--closed .dropdown-list {
+  display: none;
+}
+
+.navigation-list--opened .dropdown-list {
+  display: flex;
+}
+
+.navigation-list--closed .navigation-list__btn {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  margin-bottom: 60px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    top: 20px;
+    right: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    top: 10px;
+    right: 0;
+  }
+}
+
+.navigation-list--opened .navigation-list__btn {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    top: 14px;
+    right: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    top: 14px;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.navigation-list--nojs .dropdown-list {
+  display: flex;
+}
+
+.navigation-list--nojs .navigation-list__btn {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation-list {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .active {
+    border-bottom: 1px solid $green;
+  }
+
+  .navigation-list__btn {
+    display: none;
+  }
+
+  .navigation-list--closed .dropdown-list {
+    display: flex;
+  }
+
+  .navigation-list--opened .dropdown-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation-list {
+    display: flex;
+    margin-right: 110px;
+    margin-top: 40px;
+
+    &--absolute {
+      position: absolute;
+    }
+  }
+
+  .desktop-active {
+    border-bottom: 1px solid #ffffff;
+  }
+}
