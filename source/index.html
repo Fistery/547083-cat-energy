@@ -18,7 +18,6 @@
         <a href="" class="logo logo--mobile">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <img src="img/logo-mobile.svg" class="image logo__img logo__img--header" width="184" height="70" alt="Cat Energy">
           </picture>
         </a>
@@ -45,6 +44,12 @@
       <p class="promo-text promo-text--medium">
         Занялся собой? Займись и котом!
       </p>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@2x.png 1000w">
+        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
+        <source media="(max-width: 320px)" srcset="img/index-can-mobile@2x.png 560w">
+        <img src="img/index-can-mobile@1x.png" alt="Cat Energy" class="image hero__image">
+      </picture>
       <a class="btn btn--green btn--hero" href="form.html">Подобрать программу</a>
     </div>
     <section class="programs">
@@ -74,6 +79,10 @@
       <div class="about-wrapper">
         <div class="about__text-wrapper">
           <p class="about__text about__text--icon-list">
+            <picture>
+              <source srcset="img/advantage-leaf@2x.png 104w">
+              <img width="52" height="58" class="about__img about__img--list" src="img/advantage-leaf@1x.png" alt="">
+            </picture>
             Функциональное питание содержит только полезные
             питательные вещества.
           </p>
@@ -81,6 +90,10 @@
         </div>
         <div class="about__text-wrapper">
           <p class="about__text about__text--icon-whater">
+              <picture>
+                  <source srcset="img/advantage-powder@2x.png 116w">
+                  <img width="58" height="62" class="about__img about__img--whater" src="img/advantage-powder@1x.png" alt="">
+                </picture>
             Выпускается в виде порошка, который нужно лишь
             залить кипятком и готово.
           </p>
@@ -88,6 +101,10 @@
         </div>
         <div class="about__text-wrapper">
           <p class="about__text about__text--icon-eat">
+              <picture>
+                  <source srcset="/img/advantage-dining@2x.png 92w">
+                  <img width="46" height="60" class="about__img about__img--eat" src="img/advantage-dining@1x.png" alt="">
+                </picture>
             Замените один-два приема обычной еды на наше
             функциональное питание.
           </p>
@@ -95,6 +112,10 @@
         </div>
         <div class="about__text-wrapper">
           <p class="about__text about__text--icon-time">
+              <picture>
+                  <source srcset="img/advantage-clock@2x.png 104w">
+                  <img width="52" height="62" class="about__img about__img--clock" src="img/advantage-clock@1x.png" alt="">
+                </picture>
             Уже через месяц наслаждайтесь изменениями к
             лучшему<br class="about__desktop-br"> вашего питомца!
           </p>
@@ -126,7 +147,10 @@
       </div>
       <div class="example__slider slider slider__mobile">
         <div class="slider__image slider__image--mobile-before slider-active">
-          <img width="311" height="232" class="image image-cat" src="img/before-mobile@1x.png" alt="толстый кот">
+          <picture>
+            <source srvset="img/before-mobile@2x.png 622w">
+              <img width="311" height="232" class="image image-cat" src="img/before-mobile@1x.png" alt="толстый кот">
+          </picture>
           <div class="slider__text-wrapper">
             <p class="slider__text">Было</p>
             <div class="slider__line">
@@ -138,7 +162,10 @@
           </div>
         </div>
         <div class="slider__image slider__image--mobile-after">
-          <img width="251" height="240" class="image image-cat" src="img/after-mobile@1x.png" alt="худой кот">
+          <picture>
+              <source srcset="img/after-mobile@2x.png 502w">
+              <img width="251" height="240" class="image image-cat" src="img/after-mobile@1x.png" alt="худой кот">
+          </picture>
           <div class="slider__text-wrapper">
             <p class="slider__text">Было</p>
             <div class="slider__line">
@@ -153,12 +180,22 @@
       <div class="example__slider slider slider__tablet">
         <div class="slider__image slider__image--tablet-before">
           <div class="tablet-wrapp--before">
-            <img width="677" height="499" class="image image-cat" src="img/before-tablet@1x.png" alt="толстый кот">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@2x.png 1344w">
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
+              <source srcset="img/before-tablet@2x.png 1344w">
+              <img width="677" height="499" class="image image-cat" src="img/before-tablet@1x.png" alt="толстый кот">
+            </picture>
           </div>
         </div>
         <div class="slider__image slider__image--tablet-after">
           <div class="tablet-wrapp--after">
-            <img width="545" height="517" class="image image-cat" src="img/after-tablet@1x.png" alt="худой кот">
+              <picture>
+                  <source media="(min-width: 1440px)" srcset="img/after-desktop@2x.png 1090w">
+                  <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
+                  <source srcset="img/after-tablet@2x.png 1090w">
+                  <img width="545" height="517" class="image image-cat" src="img/after-tablet@1x.png" alt="худой кот">
+                </picture>
           </div>
         </div>
         <div class="grey-bg"></div>
@@ -186,9 +223,12 @@
     </div>
     <div class="map">
       <picture>
-        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/bg-map-tablet@1x.png">
+        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@2x.png 2880w">
         <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
-        <img class="map__mobile" src="img/bg-map-mobile@1x.png" alt="мы на карте">
+        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/bg-map-tablet@2x.png 1536w">
+        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/bg-map-tablet@1x.png">
+        <source srcset="img/bg-map-mobile@2x.png 640w">
+        <img class="image" src="img/bg-map-mobile@1x.png" alt="мы на карте">
       </picture>
       <div class="map__point">
         <img width="55" height="49" src="img/map-pin.png" alt="" class="image image-point">

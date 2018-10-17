@@ -1,6 +1,11 @@
 .promo {
   background-image: url("/img/gift-photo-mobile@1x.jpg");
   color: #ffffff;
+
+  @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    background-image: url("/img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .promo__text {
@@ -29,6 +34,11 @@
   .promo {
     background-image: url("/img/gift-photo-tablet@1x.jpg");
     margin-top: 60px;
+
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+      background-image: url("/img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .promo__text {
@@ -55,6 +65,11 @@
     height: 290px;
     margin-top: 190px;
     margin-right: 10px;
+
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+      background-image: url("/img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .promo__text {

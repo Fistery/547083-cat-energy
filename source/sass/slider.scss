@@ -92,13 +92,17 @@
     }
 
     &--tablet-before {
+      width: 677px;
+      height: 499px;
       clip: rect(auto, 335px, auto, auto);
       top: -200px;
       left: 45px;
     }
 
     &--tablet-after {
-      clip: rect(auto, auto, auto, 337px);
+      width: 700px;
+      height: 517px;
+      clip: rect(auto, auto, auto, 345px);
       top: -200px;
       right: 35px;
     }

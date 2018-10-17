@@ -1,5 +1,6 @@
 .map {
   position: relative;
+  width: 320px;
 }
 
 .map__point {
@@ -11,6 +12,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    width: 768px;
+  }
+
   .map__point {
     position: absolute;
     top: 153px;
@@ -21,6 +26,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .map {
+    width: 1440px;
+  }
+
   .map__point {
     position: absolute;
     top: 156px;
