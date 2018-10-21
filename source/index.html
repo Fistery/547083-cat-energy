@@ -12,6 +12,10 @@
 
 <body>
 
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="header">
     <nav class="navigation-list navigation-list--closed navigation-list--absolute navigation-list--nojs">
       <div class="container position-container">
@@ -45,10 +49,10 @@
         Занялся собой? Займись и котом!
       </p>
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@2x.png 2x">
-        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x">
-        <source media="(max-width: 320px)" srcset="img/index-can-mobile@2x.png 560w">
-        <img src="img/index-can-mobile@1x.png" alt="Cat Energy" class="image hero__image">
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <source type="image/webp" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+        <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy" class="image hero__image">
       </picture>
       <a class="btn btn--green btn--hero" href="form.html">Подобрать программу</a>
     </div>
@@ -80,8 +84,8 @@
         <div class="about__text-wrapper">
           <p class="about__text about__text--icon-list">
             <picture>
-              <source srcset="img/advantage-leaf@2x.png 104w">
-              <img width="52" height="58" class="about__img about__img--list" src="img/advantage-leaf@1x.png" alt="">
+              <source type="image/webp" srcset="img/advantage-leaf@1x.webp 1x, img/advantage-leaf@2x.webp 2x">
+              <img width="52" height="58" class="about__img about__img--list" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="лист">
             </picture>
             Функциональное питание содержит только полезные
             питательные вещества.
@@ -91,8 +95,8 @@
         <div class="about__text-wrapper">
           <p class="about__text about__text--icon-whater">
             <picture>
-              <source srcset="img/advantage-powder@2x.png 116w">
-              <img width="58" height="62" class="about__img about__img--whater" src="img/advantage-powder@1x.png" alt="">
+              <source type="image/webp" srcset="img/advantage-powder@1x.webp 1x, img/advantage-powder@2x.webp 2x">
+              <img width="58" height="62" class="about__img about__img--whater" src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" alt="вода">
             </picture>
             Выпускается в виде порошка, который нужно лишь
             залить кипятком и готово.
@@ -102,8 +106,8 @@
         <div class="about__text-wrapper">
           <p class="about__text about__text--icon-eat">
             <picture>
-              <source srcset="/img/advantage-dining@2x.png 92w">
-              <img width="46" height="60" class="about__img about__img--eat" src="img/advantage-dining@1x.png" alt="">
+                <source type="image/webp" srcset="img/advantage-dining@1x.webp 1x, img/advantage-dining@2x.webp 2x">
+              <img width="46" height="60" class="about__img about__img--eat" src="img/advantage-dining@1x.png" srcset="/img/advantage-dining@2x.png 2x" alt="вилка и нож">
             </picture>
             Замените один-два приема обычной еды на наше
             функциональное питание.
@@ -113,8 +117,8 @@
         <div class="about__text-wrapper">
           <p class="about__text about__text--icon-time">
             <picture>
-              <source srcset="img/advantage-clock@2x.png 104w">
-              <img width="52" height="62" class="about__img about__img--clock" src="img/advantage-clock@1x.png" alt="">
+              <source type="image/webp" srcset="img/advantage-clock@1x.webp 1x, img/advantage-clock@2x.webp 2x">
+              <img width="52" height="62" class="about__img about__img--clock" src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png 2x" alt="время">
             </picture>
             Уже через месяц наслаждайтесь изменениями к
             лучшему<br class="about__desktop-br"> вашего питомца!
@@ -148,8 +152,8 @@
       <div class="example__slider slider slider__mobile">
         <div class="slider__image slider__image--mobile-before slider-active">
           <picture>
-            <source srvset="img/before-mobile@2x.png 622w">
-            <img width="311" height="232" class="image image-cat" src="img/before-mobile@1x.png" alt="толстый кот">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <img width="311" height="232" class="image image-cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="толстый кот">
           </picture>
           <div class="slider__text-wrapper">
             <p class="slider__text">Было</p>
@@ -163,8 +167,8 @@
         </div>
         <div class="slider__image slider__image--mobile-after">
           <picture>
-            <source srcset="img/after-mobile@2x.png 502w">
-            <img width="251" height="240" class="image image-cat" src="img/after-mobile@1x.png" alt="худой кот">
+            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+            <img width="251" height="240" class="image image-cat" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="худой кот">
           </picture>
           <div class="slider__text-wrapper">
             <p class="slider__text">Было</p>
@@ -181,20 +185,20 @@
         <div class="slider__image slider__image--tablet-before">
           <div class="tablet-wrapp--before">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/before-desktop@2x.png 1344w">
-              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
-              <source srcset="img/before-tablet@2x.png 1344w">
-              <img width="677" height="499" class="image image-cat" src="img/before-tablet@1x.png" alt="толстый кот">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <img width="677" height="499" class="image image-cat" src="img/before-tablet@1x.png" srcset="img/before-tablet@2x.png 2x" alt="толстый кот">
             </picture>
           </div>
         </div>
         <div class="slider__image slider__image--tablet-after">
           <div class="tablet-wrapp--after">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/after-desktop@2x.png 1090w">
-              <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
-              <source srcset="img/after-tablet@2x.png 1090w">
-              <img width="545" height="517" class="image image-cat" src="img/after-tablet@1x.png" alt="худой кот">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source type="image/webp" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <img width="545" height="517" class="image image-cat" src="img/after-tablet@1x.png" srcset="img/after-tablet@2x.png 2x" alt="худой кот">
             </picture>
           </div>
         </div>
@@ -222,14 +226,14 @@
       </div>
     </div>
     <div class="map">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@2x.png 2880w">
-        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
-        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/bg-map-tablet@2x.png 1536w">
-        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/bg-map-tablet@1x.png">
-        <source srcset="img/bg-map-mobile@2x.png 640w">
-        <img class="image" src="img/bg-map-mobile@1x.png" alt="мы на карте">
-      </picture>
+        <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1px, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="мы на карте">
+          </picture>
       <div class="map__point">
         <img width="55" height="49" src="img/map-pin.png" alt="" class="image image-point">
       </div>

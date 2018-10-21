@@ -117,6 +117,10 @@ body {
   opacity: 0.3;
 }
 
+.footer__logo {
+  width: 130px;
+}
+
 @media (min-width: $tablet-width) {
   body {
     font-family: "Oswald", "Arial", sans-serif;
@@ -214,7 +218,7 @@ body {
 
   .btn {
     @include font(20px, 20px);
-    padding: 15px 25px;
+    padding: 16px 26.5px;
 
     &--catalog {
       margin-top: 30px;
@@ -228,9 +232,9 @@ body {
     }
 
     &--hero {
-      margin-top: 40px;
+      margin-top: 53px;
       margin-bottom: 0;
-      margin-left: 30px;
+      margin-left: 71px;
     }
   }
 
