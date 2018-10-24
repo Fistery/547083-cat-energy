@@ -8,7 +8,7 @@
   font-weight: 400;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .contact-page__text {
@@ -17,8 +17,8 @@
   width: 230px;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
 .contact-form {
@@ -33,7 +33,7 @@
 }
 
 .contact-form__row {
-  margin-bottom: 23px;
+  margin-bottom: 15px;
 }
 
 .contact-form__radio {
@@ -44,12 +44,14 @@
 @media (min-width: $tablet-width) {
   .contact-page__title {
     @include font(60px, 60px);
+    margin: 55px 0;
   }
 
   .contact-page__text {
     @include font(20px, 30px);
     width: 330px;
-    margin-left: 35px;
+    margin-left: 40px;
+    margin-bottom: 69px;
   }
 
   .contact-form__row {
@@ -59,12 +61,12 @@
   }
 
   .contact-form__radio {
-    margin-top: 23px;
+    margin-top: -14px;
     margin-bottom: 0;
     margin-left: 70px;
     border: 1px solid $light-grey;
     box-sizing: border-box;
-    padding: 24px 0;
+    padding: 30px 0 30px 13px;
     width: 630px;
   }
 }
@@ -73,20 +75,22 @@
 @media (min-width: $desktop-width) {
   .contact-page__title {
     margin-left: 40px;
+    margin-top: 71px;
   }
 
   .contact-page__text {
     margin-left: 40px;
+    margin-bottom: 39px;
   }
 
   .contact-form__row {
     margin-bottom: 0;
     margin-left: 35px;
-    width: 690px;
+    width: 685px;
   }
 
   .contact-form__radio {
-    padding: 30px 0 0 0;
+    padding: 26px 0 0 0;
     width: 570px;
     margin-left: 40px;
     margin-top: 0;

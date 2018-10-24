@@ -8,14 +8,16 @@
 
 .example__title {
   @include font(36px, 60px);
-  text-transform: uppercase;
-  padding-top: 20px;
+  margin: 0;
+  padding-top: 17px;
 }
 
 .example__text {
   font-family: "Arial", sans-serif;
   width: 267px;
   padding-bottom: 20px;
+  margin-top: 23px;
+  margin-bottom: 5px;
 
   &--bold {
     font-family: "Oswald", "Arial", sans-serif;
@@ -24,9 +26,8 @@
 
     text-transform: uppercase;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 40px;
+    margin-top: 34px;
+    margin-left: 8px;
   }
 }
 
@@ -44,7 +45,7 @@
   align-items: center;
   border: 1px solid #cfcfcf;
   border-radius: 5px;
-  width: 124px;
+  width: 122px;
 }
 
 .example__info-text {
@@ -63,8 +64,8 @@
     text-transform: uppercase;
 
     padding: {
-      top: 15px;
-      bottom: 15px;
+      top: 13px;
+      bottom: 17px;
     }
   }
 
@@ -94,17 +95,19 @@
 
   .example__title {
     @include font(60px, 60px);
-    padding-top: 0;
+    padding-top: 43px;
+    margin: auto;
   }
 
   .example__text {
     width: 680px;
-    padding-bottom: 55px;
+    margin-top: 65px;
+    padding-bottom: 47px;
 
     @include font(16px, 24px);
 
     &--bold {
-      @include font(20px, 20px);
+      @include font(20px, 28px);
 
       width: 175px;
       text-align: right;
@@ -121,8 +124,8 @@
   }
 
   .example__info {
-    width: 162px;
-    margin-right: 43px;
+    width: 160px;
+    margin-right: 40px;
   }
 
   .example__info-text {
@@ -134,15 +137,16 @@
     &--bold {
       @include font(30px, 37px);
 
-      padding: 20px 0;
+      padding: 15px 0 19px 0;
     }
 
     &--bg-grey {
+      @include font(14px, 12px);
       position: absolute;
       text-align: center;
       width: 130px;
       background-color: #ffffff;
-      top: 70px;
+      top: 65px;
     }
   }
 }
@@ -155,19 +159,20 @@
     border-top: none;
     box-sizing: border-box;
     padding: 0 70px;
-    margin-bottom: 70px;
+    margin-bottom: 76px;
     background-color: transparent;
   }
 
   .example__wrapper {
     @include box-sizing;
-    padding: 0;
+    padding-left: 40px;
   }
 
   .example__title {
     @include font(60px, 60px);
     text-transform: none;
-    padding-top: 50px;
+    padding-top: 38px;
+    padding-bottom: 24px;
     margin: 0;
   }
 
@@ -179,9 +184,10 @@
   }
 
   .example__text {
-    margin-top: 130px;
+    margin-top: 110px;
+    padding-top: 10px;
     width: 435px;
-    margin-bottom: 0;
+    margin-bottom: 21px;
 
     &--bold {
       font-family: "Oswald", "Arial", sans-serif;
@@ -192,10 +198,13 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      margin-top: 50px;
+      margin-top: 60px;
       display: flex;
-      justify-content: space-between;
     }
+  }
+
+  .example-desk-text {
+    padding-right: 63px;
   }
 
   .example__info {
@@ -210,8 +219,8 @@
   .example__bg-grey {
     display: block;
     position: absolute;
-    background-image: linear-gradient(to right, $grey 73.8%, $lighten-grey 73.8%);
-    height: 560px;
+    background-image: linear-gradient(to right, $grey 72.5%, $lighten-grey 72.5%);
+    height: 586px;
     width: 1440px;
     bottom: -200px;
     left: 0;
@@ -219,8 +228,17 @@
   }
 
   .example__info-text {
+    &--bold {
+      padding: 14px 0 19px 0;
+    }
+
     &--bg-grey {
+      position: absolute;
+
+      @include font(14px, 12px);
       background-color: $grey;
+      top: 64px;
+      left: 15px;
     }
   }
 }

@@ -12,10 +12,10 @@
 .hero__image {
   position: absolute;
   content: url("/img/index-can-mobile@1x.png");
-  top: 168px;
-  left: 40px;
-  width: 220px;
-  height: 250px;
+  top: 166px;
+  left: 20px;
+  width: 280px;
+  height: 270px;
 }
 
 @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
@@ -27,11 +27,16 @@
 @media (min-width: $tablet-width) {
   .hero {
     background-image: url("/img/index-can-tablet@1x.jpg");
-    background-position: 0 190px;
+    background-position: 29px 201px;
+    background-size: contain;
     width: 709px;
-    min-height: 840px;
+    min-height: 810px;
     text-align: left;
     padding: 0 0 0 120px;
+  }
+
+  .hero__image {
+    display: none;
   }
 
   @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
@@ -39,16 +44,12 @@
       background-image: url("/img/index-can-tablet@2x.jpg");
       background-size: 709px auto;
     }
-
-    .hero__image {
-      display: none;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero {
-    background-image: url("/img/index-background-desktop@1x.jpg 1x");
+    background-image: url("/img/index-background-desktop@1x.jpg");
     background-position: top right;
     background-clip: rect(auto, auto, auto, 930px);
     width: 1440px;
@@ -66,9 +67,10 @@
 
   .hero__image {
     display: block;
-    top: 148px;
-    left: 593px;
-    width: 515px;
+    content: "";
+    top: 143px;
+    left: 561px;
+    width: 550px;
     height: auto;
   }
 }

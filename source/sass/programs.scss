@@ -7,7 +7,7 @@
   background: $grey;
   width: 280px;
   box-sizing: border-box;
-  padding: 35px 20px 20px 20px;
+  padding: 29px 20px 20px 20px;
   margin-bottom: 20px;
 
   &::before {
@@ -17,9 +17,13 @@
     height: 50px;
     background-color: $green;
     border-radius: 50%;
-    top: 30px;
-    left: 20px;
+    top: 23px;
+    left: 22px;
   }
+}
+
+.programs__item + .programs__item {
+  margin: 0;
 }
 
 .decoration-line {
@@ -36,23 +40,23 @@
 
 .programs__title {
   position: relative;
+  padding-left: 12px;
 
   @include font(24px, 37px);
 
   text-transform: uppercase;
   text-align: center;
   color: #000000;
-  padding: 0;
   margin: 0;
 
   &--cat-down {
     &::before {
       position: absolute;
       content: url("/img/icon-cat-slim.svg");
-      width: 35px;
-      height: 35px;
+      width: 36px;
+      height: 37px;
       top: -8px;
-      left: 7px;
+      left: 9px;
     }
   }
 
@@ -62,10 +66,10 @@
     &::before {
       position: absolute;
       content: url("/img/icon-cat-pro.svg");
-      width: 70px;
+      width: 68px;
       height: 70px;
-      top: 0;
-      left: -10px;
+      top: 5px;
+      left: -8px;
     }
   }
 }
@@ -99,7 +103,7 @@
   &::after {
     position: absolute;
     content: url("/img/icon-right-arrow-long.svg");
-    top: 0;
+    top: -2px;
     right: -35px;
     width: 24px;
     height: 11px;
@@ -111,7 +115,7 @@
     position: absolute;
     content: url("/img/icon-right-arrow-verylong.svg");
     top: -1px;
-    right: -60px;
+    right: -45px;
     width: 34px;
     height: 11px;
   }
@@ -139,14 +143,14 @@
   .programs__item {
     width: 708px;
     padding: 75px 50px 60px 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     &::before {
 
       content: "";
       width: 200px;
       height: 200px;
-      top: 90px;
+      top: 92px;
       left: 447px;
     }
   }
@@ -158,26 +162,24 @@
 
   .programs__title {
     @include font(36px, 37px);
-
+    padding-left: 3px;
     text-align: left;
 
     &--cat-down {
       &::before {
-        width: 145px;
+        width: 140px;
         height: 194px;
-        top: 0;
-        left: 420px;
+        top: 5px;
+        left: 426px;
       }
     }
 
     &--cat-up {
-      padding: 0;
-
       &::before {
-        width: 290px;
+        width: 268px;
         height: 70px;
-        top: 55px;
-        left: 360px;
+        top: 60px;
+        left: 362px;
       }
     }
   }
@@ -185,13 +187,19 @@
   .programs__text {
     @include font(16px, 24px);
 
-    margin-top: 30px;
+    margin-top: 26px;
     margin-bottom: 60px;
+    margin-left: 1px;
     width: 342px;
+
+    &--max-width {
+      width: 372px;
+    }
   }
 
   .programs__link {
-    margin-top: 0;
+    margin-top: -8px;
+    margin-left: 2px;
 
     @include font(20px, 20px);
 
@@ -229,6 +237,10 @@
     }
   }
 
+  .programs__item + .programs__item {
+    margin-bottom: 30px;
+  }
+
   .programs__title {
     @include font(36px, 37px);
 
@@ -259,8 +271,25 @@
   .programs__text {
     @include font(16px, 24px);
 
-    margin-top: 74px;
+    margin-top: 75px;
     margin-bottom: 31px;
     width: 465px;
+  }
+
+  .programs__link {
+    margin-top: 0;
+    margin-left: 0;
+
+    &::after {
+      top: -3px;
+      right: -48px;
+    }
+  }
+
+  .programs__link:hover {
+    &::after {
+      top: -3px;
+      right: -58px;
+    }
   }
 }

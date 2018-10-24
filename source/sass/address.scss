@@ -8,21 +8,22 @@
 
 .address__text {
   @include font(16px, 20px);
-  width: 140px;
+  width: 141px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  margin-left: -1px;
 
   padding: {
-    top: 30px;
-    bottom: 30px;
+    top: 28px;
+    bottom: 26px;
   }
 
   &--regular {
     @include font(14px, 20px);
     font-family: "Arial", sans-serif;
     text-transform: none;
-    padding-top: 31px;
+    padding-top: 28px;
   }
 
   &--br {
@@ -47,14 +48,17 @@
     margin: 0;
 
     padding: {
-      top: 30px;
-      bottom: 30px;
+      top: 65px;
+      bottom: 57px;
+      left: 40px;
     }
 
     &--regular {
       @include font(16px, 20px);
       text-transform: none;
-      padding-top: 31px;
+      padding-top: 64px;
+      padding-right: 40px;
+      padding-bottom: 0;
       text-align: right;
     }
 
@@ -81,14 +85,14 @@
     margin: 0;
 
     padding: {
-      top: 65px;
-      bottom: 65px;
+      top: 63px;
+      bottom: 58px;
     }
 
     &--regular {
       @include font(16px, 20px);
       text-transform: none;
-      padding-top: 65px;
+      padding-top: 62px;
       text-align: left;
     }
 

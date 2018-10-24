@@ -1,6 +1,7 @@
 .additional-products {
   display: flex;
   flex-direction: column;
+  margin-bottom: 38px;
 }
 
 .additional-products__item {
@@ -14,7 +15,7 @@
   @include font(24px, 24px);
   font-weight: 400;
   margin: 0;
-  padding: 30px 0;
+  padding: 28px 0 34px 0;
 
   &::after {
     position: absolute;
@@ -22,7 +23,7 @@
     width: 53px;
     height: 3px;
     background-color: $green;
-    top: 45px;
+    top: 42px;
     right: -20px;
   }
 }
@@ -42,7 +43,7 @@
 
     @include font(36px, 36px);
     margin-left: 37px;
-    padding: 75px 0;
+    padding: 68px 0 80px 0;
 
     &::after {
       position: absolute;
@@ -50,8 +51,8 @@
       width: 327px;
       height: 3px;
       background-color: $green;
-      top: 95px;
-      right: -61px;
+      top: 90px;
+      right: -30px;
     }
 
     &::before {
@@ -60,7 +61,7 @@
       width: 28px;
       height: 3px;
       background-color: $green;
-      top: 95px;
+      top: 90px;
       left: -67px;
     }
   }
@@ -69,15 +70,18 @@
 @media (min-width: $desktop-width) {
   .additional-products__title {
     margin-left: 40px;
+    padding-top: 33px;
 
     &::after {
       width: 957px;
-      right: -445px;
+      right: -435px;
+      top: 55px;
     }
 
     &::before {
       width: 70px;
-      left: -100px;
+      left: -110px;
+      top: 55px;
     }
   }
 
@@ -87,7 +91,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    width: 895px;
+    width: 905px;
     height: 74px;
     margin-left: 30px;
   }

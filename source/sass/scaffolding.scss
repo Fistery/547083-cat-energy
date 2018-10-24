@@ -63,8 +63,9 @@ body {
   }
 
   &--catalog {
-    margin-top: 15px;
+    margin-top: -3px;
     margin-bottom: 23px;
+    padding: 10px 25px 10px 25px;
   }
 
   &--grey {
@@ -75,13 +76,14 @@ body {
 
   &--additional {
     margin-bottom: 17px;
+    padding: 10px 25px 10px 25px;
   }
 
   &--hero {
-    margin-top: 300px;
+    margin-top: 302px;
     margin-bottom: 23px;
     color: #ffffff;
-    padding: 10px 73px;
+    padding: 10px 63px;
   }
 }
 
@@ -107,6 +109,12 @@ body {
   width: 200px;
   margin-top: 10px;
   margin-bottom: 15px;
+  padding: 0;
+
+  &--mobile {
+    width: 190px;
+    margin-bottom: 14px;
+  }
 }
 
 .logo:hover {
@@ -119,20 +127,12 @@ body {
 
 .footer__logo {
   width: 130px;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   body {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-    background-color: #ffffff;
-    background-position: top center;
-    background-repeat: no-repeat;
     width: 768px;
-    margin: 0 auto;
-    padding: 0;
   }
 
   .btn {
@@ -140,6 +140,8 @@ body {
     padding: 15px 25px;
 
     &--catalog {
+      @include font(16px, 20px);
+      padding: 10px 0 10px 0;
       margin-top: 30px;
       margin-bottom: 23px;
     }
@@ -147,11 +149,19 @@ body {
     &--grey {
       background-color: $grey;
       color: #000000;
-      margin-top: 90px;
+      margin-top: 79px;
+      margin-bottom: 16px;
     }
 
     &--hero {
-      margin-top: 40px;
+      margin-top: 47px;
+      margin-bottom: 0;
+      padding: 16px 26px;
+    }
+
+    &--additional {
+      @include font(16px, 20px);
+      padding: 10px 0 10px 0;
       margin-bottom: 0;
     }
   }
@@ -160,10 +170,19 @@ body {
     display: flex;
     flex-grow: 1;
     text-decoration: none;
-    width: 200px;
     padding: 0;
     margin: 0;
-    margin-top: 17px;
+    margin-top: 20px;
+
+    &--tablet {
+      width: 170px;
+      margin-top: 5px;
+      margin-left: 1px;
+    }
+  }
+
+  .logo__img--header {
+    width: 175px;
   }
 
   .position-container {
@@ -174,37 +193,35 @@ body {
   }
 
   .container {
-    box-sizing: border-box;
     padding: 0 30px;
 
     &--address {
       display: flex;
       justify-content: space-between;
     }
+
+    &--minw {
+      padding-right: 25px;
+    }
+
+    &--minw-contact {
+      padding-right: 22px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-    background-color: #ffffff;
-    background-position: top center;
-    background-repeat: no-repeat;
     width: 1440px;
-    margin: 0 auto;
-    padding: 0;
   }
 
   .container {
-    box-sizing: border-box;
     padding: 0 70px;
 
     &--address {
       display: flex;
       justify-content: space-between;
+      padding: 0 84px 0 76px;
     }
 
     &--desk-wrapp {
@@ -214,6 +231,10 @@ body {
     &--desk-wrapp-two {
       padding-left: 0;
     }
+
+    &--minw {
+      padding-right: 40px;
+    }
   }
 
   .btn {
@@ -221,20 +242,30 @@ body {
     padding: 16px 26.5px;
 
     &--catalog {
-      margin-top: 30px;
-      margin-bottom: 23px;
+      @include font(16px, 20px);
+      padding: 10px 0 10px 0;
+      margin-top: 31.5px;
+      margin-bottom: 22px;
     }
 
     &--grey {
       background-color: $grey;
       color: #000000;
-      margin-top: 90px;
+      margin-top: 77px;
     }
 
     &--hero {
       margin-top: 53px;
       margin-bottom: 0;
       margin-left: 71px;
+    }
+
+    &--additional {
+      width: 191px;
+      margin-bottom: 3px;
+      padding: 11px 27px 10px 26px;
+
+      @include font(16px, 20px);
     }
   }
 
@@ -246,11 +277,7 @@ body {
     margin-left: 40px;
   }
 
-  .btn--additional {
-    width: 245px;
-    margin-bottom: 0;
-    margin-left: 40px;
-
-    @include font(16px, 20px);
+  .logo__img--header {
+    width: 200px;
   }
 }

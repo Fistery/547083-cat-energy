@@ -1,5 +1,6 @@
 .about {
   @include box-sizing;
+  padding-bottom: 20px;
 }
 
 .about__img {
@@ -7,42 +8,44 @@
 
   &--list {
     width: 52px;
-    height: 58px;
-    top: -3px;
+    height: 56px;
+    top: 0;
     left: 4px;
   }
 
   &--whater {
-    width: 58px;
-    height: 62px;
-    top: -5px;
-    left: 1px;
+    width: 52px;
+    height: 52px;
+    top: 1px;
+    left: 4px;
   }
 
   &--eat {
-    width: 46px;
-    height: 60px;
-    top: -3px;
-    left: 6px;
+    width: 48px;
+    height: 53px;
+    top: 1px;
+    left: 5px;
   }
 
   &--clock {
-    width: 52px;
-    height: 62px;
-    top: -4px;
+    width: 51px;
+    height: 51px;
+    top: 3px;
     left: 4px;
   }
 }
 
 .about__title {
   @include font(36px, 60px);
+  margin-top: 16px;
+  margin-bottom: 30px;
 }
 
 .about__text {
   position: relative;
   font-family: "Arial", sans-serif;
-  padding: 0 0 0 85px;
-  margin-bottom: 30px;
+  padding: 0 0 0 81px;
+  margin-bottom: 26px;
 
   &::before {
     content: "";
@@ -50,7 +53,7 @@
     width: 60px;
     height: 60px;
     background-color: $green;
-    top: -3px;
+    top: -2px;
     left: 0;
   }
 
@@ -74,30 +77,30 @@
 @media (min-width: $tablet-width) {
   .about {
     padding: 0 30px;
-    padding-bottom: 90px;
+    padding-bottom: 102px;
   }
 
   .about__img {
     position: absolute;
 
     &--list {
-      top: -119px;
+      top: -101px;
       left: 14px;
     }
 
     &--whater {
-      top: -122px;
+      top: -100px;
       left: 12px;
     }
 
     &--eat {
-      top: -115px;
-      left: 13px;
+      top: -99px;
+      left: 17px;
     }
 
     &--clock {
-      top: -123px;
-      left: 12px;
+      top: -98px;
+      left: 14px;
     }
   }
 
@@ -108,26 +111,32 @@
 
   .about__title {
     @include font(60px, 60px);
+    margin: auto;
+    margin-top: 45px;
   }
 
   .about__text {
     padding: 0;
+    margin-top: 184px;
     margin-bottom: 0;
-    margin-top: 190px;
 
     @include font(16px, 24px);
 
     &::before {
       width: 80px;
       height: 80px;
-      top: -130px;
+      top: -112px;
       left: 0;
     }
 
     &--icon-eat,
     &--icon-time {
-      margin-top: 255px;
+      margin-top: 245px;
     }
+  }
+
+  .about__desktop-br {
+    display: block;
   }
 
   .about__text-wrapper {
@@ -139,7 +148,7 @@
     }
 
     &:nth-child(even) {
-      width: 223px;
+      width: 245px;
     }
   }
 
@@ -157,18 +166,18 @@
     }
 
     &--two {
-      top: -250px;
-      right: -25px;
+      top: -248px;
+      right: -1px;
     }
 
     &--three {
-      top: -180px;
-      right: -25px;
+      top: -187px;
+      right: -43px;
     }
 
     &--four {
-      top: -180px;
-      right: -25px;
+      top: -188px;
+      right: -4px;
     }
   }
 }
@@ -180,7 +189,7 @@
   }
 
   .about__title {
-    margin: 55px 0 32px 24px;
+    margin: 45px 0 32px 24px;
   }
 
   .about__img {
@@ -192,25 +201,24 @@
     }
 
     &--whater {
-      top: -100px;
-      left: 12px;
-    }
-
-    &--eat {
-      top: -100px;
+      top: -97px;
       left: 15px;
     }
 
+    &--eat {
+      top: -97px;
+      left: 18px;
+    }
+
     &--clock {
-      top: -101px;
-      left: 14px;
+      top: -98px;
+      left: 15px;
     }
   }
 
   .about-wrapper {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
   }
 
   .about__text-wrapper {
@@ -242,7 +250,7 @@
       width: 80px;
       height: 80px;
       top: -111px;
-      left: 0;
+      left: 2px;
     }
 
     &--icon-eat,

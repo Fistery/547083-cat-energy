@@ -1,11 +1,11 @@
 .promo-text {
   color: #ffffff;
   text-align: center;
-  padding: 0;
   margin: 0;
+  margin-top: -3px;
 
   &--medium {
-    margin-top: 20px;
+    margin-top: 25px;
     text-transform: uppercase;
 
     @include font(14px, 14px);
@@ -23,13 +23,15 @@
     width: 427px;
 
     &--medium {
-      margin-top: 35px;
+      margin-top: 42px;
+      margin-left: -1px;
 
       @include font(20px, 20px);
     }
 
     &--bold {
-      margin-top: 30px;
+      margin-top: 54px;
+      margin-left: -2px;
 
       @include font(60px, 60px);
     }

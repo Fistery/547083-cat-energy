@@ -2,9 +2,14 @@
   font-family: "Arial:", sans-serif;
 
   @include font(14px, 14px);
+  padding: 12px 0 15px 1px;
+  margin: 0;
 
   &--bold {
     font-family: "Oswald", "Arial", sans-serif;
+
+    @include font(16px, 16px);
+    padding: 13px 0 0 1px;
     text-transform: uppercase;
     font-weight: 400;
   }
@@ -18,12 +23,17 @@
 @media (min-width: $tablet-width) {
   .products-item__text {
     @include font(16px, 20px);
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-bottom: 21px;
+    vertical-align: baseline;
 
     &--bold {
       position: absolute;
+      top: 23px;
+      left: 34px;
 
       @include font(20px, 20px);
-      top: 20px;
     }
 
     &:nth-child(odd) {
@@ -38,8 +48,24 @@
 }
 
 @media (min-width: $desktop-width) {
-  .products-item__text--bold {
-    margin: 0;
-    margin-top: 7px;
+  .products-item__text {
+    padding-top: 5px;
+    padding-bottom: 0;
+
+    &--bold {
+      margin: 0;
+      top: 20px;
+      left: 6px;
+    }
+  }
+
+  .products-item__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+  }
+
+  .products-item__text--margin-desk {
+    margin-right: 9px;
   }
 }
