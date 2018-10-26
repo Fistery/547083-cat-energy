@@ -92,7 +92,6 @@
 
   .form__label--checkbox {
     @include font(20px, 30px);
-    position: relative;
     padding-top: 1px;
     margin-bottom: 0;
     margin-top: 0;
@@ -152,7 +151,6 @@
 
 @media (min-width: $desktop-width) {
   .checkbox__tablet-wrapp {
-    display: flex;
     flex-wrap: nowrap;
     width: 1220px;
     margin-left: 40px;

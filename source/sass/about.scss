@@ -81,8 +81,6 @@
   }
 
   .about__img {
-    position: absolute;
-
     &--list {
       top: -101px;
       left: 14px;
@@ -193,8 +191,6 @@
   }
 
   .about__img {
-    position: absolute;
-
     &--list {
       top: -100px;
       left: 14px;
@@ -214,11 +210,6 @@
       top: -98px;
       left: 15px;
     }
-  }
-
-  .about-wrapper {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .about__text-wrapper {
@@ -247,8 +238,6 @@
     margin-top: 0;
 
     &::before {
-      width: 80px;
-      height: 80px;
       top: -111px;
       left: 2px;
     }
@@ -259,18 +248,7 @@
     }
   }
 
-  .about__desktop-br {
-    display: block;
-  }
-
   .about__bg {
-    display: block;
-    position: absolute;
-    color: $grey;
-    z-index: -1;
-
-    @include font(281px, 281px);
-
     &--one {
       top: -433px;
       right: 15px;
@@ -278,7 +256,6 @@
 
     &--two {
       top: -432px;
-      right: -1px;
     }
 
     &--three {
@@ -288,7 +265,6 @@
 
     &--four {
       top: -432px;
-      right: -4px;
     }
   }
 }

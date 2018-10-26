@@ -12,6 +12,7 @@ var csso = require("gulp-csso");
 var server = require("browser-sync").create();
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
+var htmlmin = require("gulp-htmlmin");
 var include = require("posthtml-include");
 var del = require("del");
 var gulpcopy = require("gulp-copy");
@@ -47,17 +48,13 @@ gulp.task("server", function () {
 gulp.task("refresh", function (done) {
   server.reload();
   done();
-})
+});
 
-gulp.task("build", gulp.series("del", "gulpcopy", "css", "sprite", "html"))
-
-gulp.task("start", gulp.series("build", "server"));
-
-gulp.task("webp", () =>
+gulp.task("webp", function () {
   gulp.src("source/img/**/*.{png,jpg}")
-  .pipe(webp())
-  .pipe(gulp.dest("source/img"))
-);
+    .pipe(webp())
+    .pipe(gulp.dest("source/img"));
+});
 
 gulp.task("imagemin", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -71,9 +68,8 @@ gulp.task("imagemin", function () {
 
 gulp.task("sprite", function () {
   return gulp.src([
-    "source/img/icon-{fb,vk,insta,tick}*.svg",
-    "source/img/htmlacademy.svg",
-    "source/img/icon-{fb,vk,insta}*.svg"
+    "source/img/icon-{vk,insta,fb,mail,phone,tick}.svg",
+    "source/img/htmlacademy.svg"
   ])
     .pipe(svgstore({
       inlineSvg: true
@@ -89,21 +85,30 @@ gulp.task("html", function () {
     include()
   ]))
   .pipe(gulp.dest("build"))
-})
+});
 
 gulp.task("gulpcopy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**"
-  ]), {
+  ], {
     base: "source"
-  }
-})
-.pipe(gulpcopy())
-.pipe(gulp.dest("build"));
-
+  })
+    .pipe(gulp.dest("build"));
+});
 
 gulp.task("del", function () {
-  return del.sync("build");
+  return del("build");
 });
+
+gulp.task("htmlmin", function () {
+  return gulp.src("build/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+});
+
+
+gulp.task("build", gulp.series("del", "gulpcopy", "css", "sprite", "html"));
+
+gulp.task("start", gulp.series("build", "server"));

@@ -39,18 +39,12 @@
   }
 
   .additional-products__title {
-    position: relative;
-
     @include font(36px, 36px);
     margin-left: 37px;
     padding: 68px 0 80px 0;
 
     &::after {
-      position: absolute;
-      content: "";
       width: 327px;
-      height: 3px;
-      background-color: $green;
       top: 90px;
       right: -30px;
     }
@@ -86,7 +80,6 @@
   }
 
   .additional-products__item {
-    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

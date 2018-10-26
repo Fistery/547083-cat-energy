@@ -84,7 +84,6 @@
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
-    @include box-sizing;
     padding: 0 30px;
   }
 
@@ -142,8 +141,6 @@
 
     &--bg-grey {
       @include font(14px, 12px);
-      position: absolute;
-      text-align: center;
       width: 130px;
       background-color: #ffffff;
       top: 65px;
@@ -164,7 +161,6 @@
   }
 
   .example__wrapper {
-    @include box-sizing;
     padding-left: 40px;
   }
 
@@ -178,7 +174,6 @@
 
   .example__content-wrapper {
     justify-content: space-between;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 365px;
   }

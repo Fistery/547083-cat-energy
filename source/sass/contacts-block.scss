@@ -49,7 +49,6 @@
 
 @media (min-width: $tablet-width) {
   .contacts-block {
-    margin-bottom: 23px;
     width: 690px;
     margin-left: 35px;
   }
@@ -63,11 +62,7 @@
     @include font(36px, 36px);
 
     &::after {
-      position: absolute;
-      content: "";
       width: 145px;
-      height: 3px;
-      background-color: $green;
       top: 97px;
       right: -65px;
     }
@@ -130,7 +125,6 @@
 
 @media (min-width: $desktop-width) {
   .contacts-block {
-    margin-bottom: 23px;
     width: 1220px;
     margin-left: 40px;
   }
@@ -148,7 +142,6 @@
 
     &::after {
       width: 777px;
-      height: 3px;
       top: 90px;
       right: -250px;
     }
