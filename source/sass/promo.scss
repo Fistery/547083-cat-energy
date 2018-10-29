@@ -1,6 +1,8 @@
 .promo {
   background-image: url("/img/gift-photo-mobile@1x.jpg");
   color: #ffffff;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
     background-image: url("/img/gift-photo-mobile@2x.jpg");
@@ -33,6 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    width: 708px;
     background-image: url("/img/gift-photo-tablet@1x.jpg");
     margin-top: 66px;
     margin-bottom: 77px;
@@ -80,6 +83,11 @@
     margin-left: 0;
 
     &::before {
+      content: url("/img/gift-white.png");
+      width: 58px;
+      height: 61px;
+      position: absolute;
+      top: 65px;
       left: 94px;
     }
   }
@@ -87,6 +95,8 @@
   .promo__desk-wrapp {
     display: flex;
     align-items: center;
+    width: 1440px;
+    margin: 0 auto;
     margin-bottom: 9px;
   }
 }

@@ -1,6 +1,8 @@
 .footer-nav {
   position: relative;
   background-color: $grey;
+  width: 320px;
+  margin: 0 auto;
 }
 
 
@@ -25,17 +27,23 @@
   }
 
   .footer__logo {
+    display: inline-block;
     padding: 63px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer-nav {
-    width: 1440px;
+    width: 1279px;
+    margin: 0 auto;
   }
 
   .footer__logo {
     width: 200px;
-    padding: 62px 0 60px 40px;
+    padding: 63px 0 60px 38px;
+  }
+
+  .footer-nav--tablet {
+    padding: 0;
   }
 }

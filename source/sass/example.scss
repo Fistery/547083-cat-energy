@@ -3,7 +3,10 @@
 }
 
 .example {
+  position: relative;
   background-color: $grey;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -84,12 +87,14 @@
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
+    @include box-sizing;
     padding: 0 30px;
   }
 
   .example {
     background-color: #ffffff;
     border-top: 1px solid $light-grey;
+    width: 768px;
   }
 
   .example__title {
@@ -141,6 +146,8 @@
 
     &--bg-grey {
       @include font(14px, 12px);
+      position: absolute;
+      text-align: center;
       width: 130px;
       background-color: #ffffff;
       top: 65px;
@@ -158,9 +165,11 @@
     padding: 0 70px;
     margin-bottom: 76px;
     background-color: transparent;
+    width: 1440px;
   }
 
   .example__wrapper {
+    @include box-sizing;
     padding-left: 40px;
   }
 
@@ -174,6 +183,7 @@
 
   .example__content-wrapper {
     justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 365px;
   }

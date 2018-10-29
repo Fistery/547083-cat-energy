@@ -1,20 +1,17 @@
+.checkbox-input {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .checkbox-input__title {
   position: relative;
   font-weight: 400;
-  margin-top: 28px;
+  width: 164px;
+  margin-top: -24px;
   margin-bottom: 40px;
+  background-color: #ffffff;
 
   @include font(24px, 24px);
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 136px;
-    height: 3px;
-    background-color: $green;
-    top: 14px;
-    right: -20px;
-  }
 }
 
 .form__label--checkbox {
@@ -58,40 +55,32 @@
 }
 
 @media (min-width: $tablet-width) {
+  .checkbox-input {
+    width: 680px;
+    margin: 0 auto;
+  }
+
   .checkbox__tablet-wrapp {
     display: flex;
     flex-wrap: wrap;
     width: 580px;
-    margin-left: 30px;
+    margin-left: 16px;
     margin-top: 60px;
   }
 
   .checkbox-input__title {
-    margin-top: -1px;
-    margin-left: 39px;
+    margin-top: -32px;
+    margin-left: -14px;
+    padding-left: 39px;
+    width: 253px;
 
     @include font(36px, 36px);
-
-    &::after {
-      width: 446px;
-      top: 22px;
-      right: -30px;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 3px;
-      background-color: $green;
-      top: 22px;
-      left: -69px;
-    }
   }
 
 
   .form__label--checkbox {
     @include font(20px, 30px);
+    position: relative;
     padding-top: 1px;
     margin-bottom: 0;
     margin-top: 0;
@@ -150,27 +139,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .checkbox-input {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .checkbox__tablet-wrapp {
+    display: flex;
     flex-wrap: nowrap;
     width: 1220px;
-    margin-left: 40px;
-    margin-top: 60px;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-top: 20px;
+    margin: 0 auto;
   }
 
   .checkbox-input__title {
-    margin-top: 1px;
-
-    &::after {
-      width: 1078px;
-      top: 22px;
-      right: -70px;
-    }
-
-    &::before {
-      width: 70px;
-      top: 22px;
-      left: -110px;
-    }
+    margin-top: -32px;
+    margin-left: -32px;
   }
 
   .form__label--checkbox {

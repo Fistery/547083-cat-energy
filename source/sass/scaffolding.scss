@@ -6,7 +6,7 @@ body {
   background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
@@ -21,12 +21,26 @@ body {
   overflow: hidden;
 }
 
+.header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+}
+
 .container {
   box-sizing: border-box;
   padding: 0 20px;
 
   &--address {
     display: flex;
+  }
+
+  &--form-title {
+    width: 320px;
+    margin: 0 auto;
   }
 }
 
@@ -131,7 +145,11 @@ body {
 }
 
 @media (min-width: $tablet-width) {
-  body {
+  // body {
+  //   width: 768px;
+  // }
+
+  .header {
     width: 768px;
   }
 
@@ -207,12 +225,18 @@ body {
     &--minw-contact {
       padding-right: 22px;
     }
+
+    &--form-title {
+      width: 708px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    width: 1440px;
+  .header {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .container {
@@ -233,7 +257,29 @@ body {
     }
 
     &--minw {
+      width: 615px;
       padding-right: 40px;
+      padding-left: 0;
+    }
+
+    &--form-title {
+      width: 1220px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    &--contacts-block {
+      width: 1220px;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    &--textarea {
+      padding: 0;
+    }
+
+    &--checkbox {
+      padding: 0;
     }
   }
 
@@ -279,5 +325,10 @@ body {
 
   .logo__img--header {
     width: 200px;
+    margin-left: -31px;
+  }
+
+  .position-container {
+    padding: 0;
   }
 }

@@ -57,14 +57,21 @@
 
 @media (min-width: $desktop-width) {
   .dropdown-list {
+    display: flex;
     width: 481px;
-    margin-right: 80px;
+    margin-right: -8px;
+    margin-top: 35px;
     z-index: 3;
 
-    &--absolute {
-      position: absolute;
-      left: 850px;
-    }
+    // &--absolute {
+    //   position: absolute;
+    //   left: 850px;
+    // }
+  }
+
+  .dropdown-list__item {
+    text-align: center;
+    border-bottom: none;
   }
 
   .dropdown-list__link {

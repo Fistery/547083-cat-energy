@@ -153,9 +153,9 @@
       height: 8px;
       background-color: $green;
       border-radius: 50%;
-      top: 51%;
-      left: 48%;
-      transform: translate(-48%, -51%);
+      top: 50%;
+      left: 52%;
+      transform: translate(-52%, -50%);
     }
 
     &--after {
@@ -188,11 +188,9 @@
 
     &--tablet-after {
       width: 690px;
-      height: 650px;
       clip: rect(auto, auto, auto, 365px);
       top: -171px;
       right: -120px;
-      background-image: linear-gradient(to bottom, #ffffff 29%, $lighten-grey 29%);
     }
   }
 

@@ -1,4 +1,6 @@
 .address {
+  width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
 
   &--grey {
@@ -14,9 +16,10 @@
   margin: 0;
   margin-left: -1px;
 
-
-  padding-top: 28px;
-  padding-bottom: 26px;
+  padding: {
+    top: 28px;
+    bottom: 26px;
+  }
 
   &--regular {
     @include font(14px, 20px);
@@ -31,18 +34,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .address {
+    width: 768px;
+    background-color: #ffffff;
+
+    &--grey {
+      background-color: $grey;
+    }
+  }
+
   .address__text {
     @include font(20px, 25px);
     width: 160px;
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
 
-    padding-top: 65px;
-    padding-bottom: 57px;
-    padding-left: 40px;
+    padding: {
+      top: 65px;
+      bottom: 57px;
+      left: 40px;
+    }
 
     &--regular {
       @include font(16px, 20px);
+      text-transform: none;
       padding-top: 64px;
       padding-right: 40px;
       padding-bottom: 0;
@@ -61,19 +77,29 @@
     width: 570px;
     z-index: 2;
     top: 96px;
-    left: 110px;
+    right: 50%;
+    transform: translateX(-32px);
+
+    &--grey {
+      background-color: #ffffff;
+    }
   }
 
   .address__text {
     @include font(20px, 25px);
+    width: 160px;
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
 
-    padding-top: 63px;
-    padding-bottom: 58px;
+    padding: {
+      top: 63px;
+      bottom: 58px;
+    }
 
     &--regular {
       @include font(16px, 20px);
+      text-transform: none;
       padding-top: 62px;
       text-align: left;
     }

@@ -7,6 +7,7 @@
   width: 320px;
   text-align: center;
   background-size: 320px auto;
+  margin: 0 auto;
 }
 
 .hero__image {
@@ -27,7 +28,6 @@
 @media (min-width: $tablet-width) {
   .hero {
     background-image: url("/img/index-can-tablet@1x.jpg");
-    background-color: #ffffff;
     background-position: 29px 201px;
     background-size: contain;
     width: 709px;

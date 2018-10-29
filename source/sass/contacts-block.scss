@@ -1,23 +1,18 @@
 .contacts-block {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 23px;
 }
 
 .contacts-block__title {
   position: relative;
+  background-color: #ffffff;
+  width: 201px;
   font-weight: 400;
   margin-bottom: 34px;
+  margin-top: -24px;
 
   @include font(24px, 24px);
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 99px;
-    height: 3px;
-    background-color: $green;
-    top: 14px;
-    right: -20px;
-  }
 }
 
 .form__label {
@@ -49,33 +44,19 @@
 
 @media (min-width: $tablet-width) {
   .contacts-block {
-    width: 690px;
-    margin-left: 35px;
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 23px;
   }
 
   .contacts-block__title {
-    padding: 75px 0;
+    padding: 75px 0 75px 39px;
     margin: 0;
-    margin-top: 115px;
-    margin-left: 4px;
+    margin-top: -107px;
+    margin-left: -30px;
+    width: 554px;
 
     @include font(36px, 36px);
-
-    &::after {
-      width: 145px;
-      top: 97px;
-      right: -65px;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 3px;
-      background-color: $green;
-      top: 97px;
-      left: -69px;
-    }
   }
 
   .form__label {
@@ -85,12 +66,12 @@
     }
 
     &--email {
-      margin-left: 6px;
+      margin-left: 12px;
       margin-top: 2px;
     }
 
     &--phone {
-      margin-left: 4px;
+      margin-left: 9px;
       margin-top: 4px;
     }
   }
@@ -100,6 +81,7 @@
     &--phone {
       padding: 19px 0 12px 24px;
       margin-left: 15px;
+      margin-right: 13px;
       height: 50px;
     }
 
@@ -114,43 +96,39 @@
 
   .icon-mail-svg {
     top: 19px;
-    right: 21px;
+    right: 34px;
   }
 
   .icon-phone-svg {
     top: 16px;
-    right: 18px;
+    right: 31px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts-block {
+    margin-bottom: 23px;
     width: 1220px;
     margin-left: 40px;
+    margin: 0 auto;
   }
 
   .contacts-block__wrapper {
     display: flex;
-    width: 1220px;
+    width: 1244px;
     justify-content: space-between;
+    margin: 0 auto;
+    margin-left: -3px;
   }
 
   .contacts-block__title {
     margin: 0;
     padding-top: 68px;
-    margin-left: -1px;
-
-    &::after {
-      width: 777px;
-      top: 90px;
-      right: -250px;
-    }
-
-    &::before {
-      width: 70px;
-      top: 90px;
-      left: -110px;
-    }
+    margin-top: -100px;
+    margin-left: -32px;
+    padding-right: 45px;
+    background-color: #ffffff;
+    width: 512px;
   }
 
   .form__label {
@@ -160,12 +138,12 @@
     }
 
     &--email {
-      margin-left: 1px;
+      // margin-left: 1px;
       margin-top: 2px;
     }
 
     &--phone {
-      margin-left: 64px;
+      // margin-left: 64px;
       margin-top: 3px;
     }
   }

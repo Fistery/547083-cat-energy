@@ -1,0 +1,36 @@
+.grey-back {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $grey;
+}
+
+@media (min-width: $tablet-width) {
+  .grey-back--transparent {
+    background-color: transparent;
+  }
+
+  .grey-back--example-tablet {
+    position: absolute;
+    height: 461px;
+    width: 100%;
+    background-image: linear-gradient(to right, $grey 35%, $lighten-grey 35%);
+    top: 3125px;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .grey-back--example-tablet {
+    height: 465px;
+    background-image: linear-gradient(to right, $grey 72.2%, $lighten-grey 72.2%);
+    top: 1795px;
+    z-index: -5;
+  }
+
+  .grey-back--footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $grey;
+  }
+}

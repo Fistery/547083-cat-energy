@@ -105,11 +105,15 @@
 
 @media (min-width: $desktop-width) {
   .navigation-list {
-    display: flex;
+    width: 100%;
+    margin: 0 auto;
 
     &--absolute {
       position: absolute;
       margin-top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 15;
     }
 
     &--catalog-desk {
