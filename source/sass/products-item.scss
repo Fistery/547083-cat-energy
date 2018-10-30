@@ -37,13 +37,17 @@
     }
 
     &:nth-child(odd) {
-      margin-right: 52px;
+      margin-right: 46px;
     }
   }
 
   .products-item__content-wrapper {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .products-item__content-wrapper > .products-item__text--margin-tablet {
+    margin-right: 54px;
   }
 }
 
@@ -55,7 +59,7 @@
     &--bold {
       margin: 0;
       top: 20px;
-      left: 6px;
+      left: -2px;
     }
   }
 
@@ -63,6 +67,7 @@
     display: flex;
     justify-content: space-between;
     width: 290px;
+    margin-left: 322px;
   }
 
   .products-item__text--margin-desk {

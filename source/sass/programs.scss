@@ -221,10 +221,10 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    padding: 0 110px;
+    padding: 0 32px 0 47px;
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 1300px;
   }
 
   .programs__item {

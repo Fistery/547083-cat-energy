@@ -187,13 +187,14 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    padding: 0 85px;
+    padding: 0 22px;
     padding-bottom: 90px;
-    width: 1440px;
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .about__title {
-    margin: 45px 0 32px 24px;
+    margin: 44px 0 32px 24px;
   }
 
   .about__img {

@@ -33,6 +33,11 @@
   }
 }
 
+.address__grey-wrapper {
+  background-color: $grey;
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .address {
     width: 768px;

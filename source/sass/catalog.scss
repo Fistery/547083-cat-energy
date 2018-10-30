@@ -1,6 +1,8 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .catalog__title {
@@ -26,8 +28,9 @@
 .catalog__main-title {
   @include font(36px, 60px);
   font-weight: 400;
-  margin: 0;
+  margin: 0 auto;
   padding: 15px 0 28px 20px;
+  width: 320px;
 }
 
 .catalog__item {
@@ -172,6 +175,7 @@
     @include font(60px, 60px);
     padding-top: 54px;
     padding-left: 0;
+    width: 708px;
   }
 
   .catalog__item {
@@ -213,7 +217,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1440px;
+    width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -221,13 +225,13 @@
     justify-content: flex-start;
 
     @include box-sizing;
-    padding: 0 70px;
+    padding: 0;
   }
 
   .catalog__main-title {
     @include font(60px, 60px);
     width: 1200px;
-    margin-left: 40px;
+    margin-left: 48px;
     margin-top: 17px;
   }
 
@@ -235,17 +239,17 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    margin-right: 40px;
 
     @include box-sizing;
     padding: 40px 38px 20px 38px;
     background-color: $grey;
     width: 245px;
     margin-top: 137px;
-    margin-left: 40px;
+    margin-left: 48px;
+    margin-right: 32px;
 
     &:nth-of-type(odd) {
-      margin-right: 40px;
+      margin-right: 32px;
     }
 
     &--two {

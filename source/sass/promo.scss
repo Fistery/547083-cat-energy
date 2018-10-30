@@ -68,7 +68,7 @@
     background-image: url("/img/gift-photo-desktop@1x.jpg");
     width: 245px;
     height: 289px;
-    margin-top: 188px;
+    margin-top: -19px;
 
     @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
       background-image: url("/img/gift-photo-desktop@2x.jpg");
@@ -95,7 +95,7 @@
   .promo__desk-wrapp {
     display: flex;
     align-items: center;
-    width: 1440px;
+    width: 1300px;
     margin: 0 auto;
     margin-bottom: 9px;
   }

@@ -162,10 +162,10 @@
     justify-content: space-between;
     border-top: none;
     box-sizing: border-box;
-    padding: 0 70px;
+    padding: 0 8px;
     margin-bottom: 76px;
     background-color: transparent;
-    width: 1440px;
+    width: 1300px;
   }
 
   .example__wrapper {
@@ -224,8 +224,8 @@
   .example__bg-grey {
     display: block;
     position: absolute;
-    background-image: linear-gradient(to right, $grey 72.5%, $lighten-grey 72.5%);
-    height: 586px;
+    background-image: linear-gradient(to right, $grey 68.2%, $lighten-grey 68.2%);
+    height: 590px;
     width: 1440px;
     bottom: -200px;
     left: 0;
