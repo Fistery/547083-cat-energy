@@ -20,9 +20,10 @@
   height: 395px;
   clip: rect(34px, auto, auto, auto);
   top: -34px;
-  object-fit: cover;
+  left: 50%;
   z-index: -1;
   margin: 0 auto;
+  transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -57,7 +58,6 @@
     height: 400px;
     clip: rect(auto, auto, auto, auto);
     top: 0;
-
   }
 
   .map__point {

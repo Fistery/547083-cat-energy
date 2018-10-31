@@ -15,7 +15,7 @@
   position: relative;
   background-color: #ffffff;
   width: 247px;
-  margin-top: -87px;
+  margin-top: 0;
   margin-bottom: 0;
 
   @include font(24px, 24px);
@@ -43,7 +43,7 @@
 
     @include font(36px, 36px);
     margin-left: -2px;
-    margin-top: -179px;
+    margin-top: -4px;
     padding: 68px 0 80px 39px;
     width: 374px;
   }
@@ -56,7 +56,7 @@
 
   .additional-products__title {
     position: relative;
-    margin-top: -261px;
+    margin-top: -69px;
     margin-bottom: 1px;
     margin-left: -62px;
   }
