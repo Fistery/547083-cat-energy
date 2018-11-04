@@ -145,10 +145,6 @@ body {
 }
 
 @media (min-width: $tablet-width) {
-  // body {
-  //   width: 768px;
-  // }
-
   .header {
     width: 768px;
   }
@@ -237,14 +233,6 @@ body {
     position: relative;
     width: 1240px;
     margin: 0 auto;
-
-    &--green-back {
-      position: absolute;
-      width: 100%;
-      height: 696px;
-      background-image: linear-gradient(to right, #ffffff 55%, #63a73a 55%);
-      z-index: -2;
-    }
   }
 
   .container {
