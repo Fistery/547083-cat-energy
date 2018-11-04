@@ -66,10 +66,10 @@
 @media (min-width: $desktop-width) {
   .promo {
     background-image: url("/img/gift-photo-desktop@1x.jpg");
-    width: 245px;
+    width: 326px;
     height: 289px;
-    margin-top: 189px;
-    margin-right: 32px;
+    margin-top: 188px;
+    margin-right: 0px;
 
     @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
       background-image: url("/img/gift-photo-desktop@2x.jpg");
@@ -79,7 +79,7 @@
 
   .promo__text {
     text-align: center;
-    padding-top: 187px;
+    padding-top: 170px;
     padding-bottom: 65px;
     margin-left: 0;
 
@@ -88,7 +88,7 @@
       width: 58px;
       height: 61px;
       position: absolute;
-      top: 65px;
+      top: 49px;
       left: 94px;
     }
   }
@@ -96,7 +96,7 @@
   .promo__desk-wrapp {
     display: flex;
     align-items: center;
-    width: 1300px;
+    width: 1220px;
     margin: 0 auto;
     margin-bottom: 9px;
   }

@@ -109,6 +109,7 @@
     right: -35px;
     width: 24px;
     height: 11px;
+    transition: 0.2s;
   }
 }
 
@@ -116,7 +117,7 @@
   &::after {
     position: absolute;
     content: url("/img/icon-right-arrow-verylong.svg");
-    top: -1px;
+    top: -2px;
     right: -45px;
     width: 34px;
     height: 11px;
@@ -285,7 +286,7 @@
     margin-left: 0;
 
     &::after {
-      top: -3px;
+      top: -4px;
       right: -48px;
     }
   }

@@ -159,74 +159,37 @@
                 class="example-desk-price"></span> 15 000 руб.</span></p>
           </div>
         </div>
-        <div class="example__slider slider slider__mobile">
-          <div class="slider__image slider__image--mobile-before slider-active">
-            <picture>
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <img width="311" height="232" class="image image-cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-                alt="толстый кот">
-            </picture>
-            <div class="slider__text-wrapper">
-              <p class="slider__text">Было</p>
-              <div class="slider__line">
-                <a class="slider__btn">
-                  <div class="slider__control slider__control--before"></div>
-                </a>
-              </div>
-              <p class="slider__text">Стало</p>
-            </div>
-          </div>
-          <div class="slider__image slider__image--mobile-after">
-            <picture>
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-              <img width="251" height="240" class="image image-cat" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
-                alt="худой кот">
-            </picture>
-            <div class="slider__text-wrapper">
-              <p class="slider__text">Было</p>
-              <div class="slider__line">
-                <a class="slider__btn">
-                  <div class="slider__control slider__control--after"></div>
-                </a>
-              </div>
-              <p class="slider__text">Стало</p>
-            </div>
-          </div>
-        </div>
-        <div class="example__slider slider slider__tablet">
-          <div class="slider__image slider__image--tablet-before">
-            <div class="tablet-wrapp--before">
+        <div class="example__slider slider">
+            <div class="slider__image slider__image--before slider__image--tablet-before slider-active">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <img width="677" height="499" class="image image-cat" src="img/before-tablet@1x.png" srcset="img/before-tablet@2x.png 2x"
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <img width="311" height="232" class="image image-cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
                   alt="толстый кот">
               </picture>
             </div>
-          </div>
-          <div class="slider__image slider__image--tablet-after">
-            <div class="tablet-wrapp--after">
+            <div class="slider__image slider__image--after slider__image--tablet-after">
               <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <source type="image/webp" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <img width="545" height="517" class="image image-cat" src="img/after-tablet@1x.png" srcset="img/after-tablet@2x.png 2x"
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                <img width="251" height="240" class="image image-cat" src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x"
                   alt="худой кот">
               </picture>
             </div>
+            <div class="slider__text-wrapper">
+                <p class="slider__text">Было</p>
+                <input type="range" class="slider__range--mobile" value="1" min="1" max="2">
+                <input type="range" class="slider__range--tablet" value="50" min="1" max="100">
+                <p class="slider__text">Стало</p>
+              </div>
+            <div class="grey-bg"></div>
           </div>
-          <div class="grey-bg"></div>
-          <div class="slider__text-wrapper">
-            <p class="slider__text">Было</p>
-            <div class="slider__line">
-              <a class="slider__btn">
-                <div class="slider__control slider__control--after"></div>
-              </a>
-            </div>
-            <p class="slider__text">Стало</p>
-          </div>
-        </div>
         <div class="example__bg-grey"></div>
       </section>
     </div>
