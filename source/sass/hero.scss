@@ -53,12 +53,6 @@
     margin: 0 auto;
   }
 
-  @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
-    .hero {
-      background-image: url("/img/index-background-desktop@2x.jpg");
-    }
-  }
-
   .hero__image {
     display: block;
     content: "";

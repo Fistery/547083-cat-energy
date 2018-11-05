@@ -69,6 +69,10 @@
       padding-bottom: 0;
       text-align: right;
     }
+
+    &--br {
+      display: block;
+    }
   }
 
   .address__text--marg + .address__text--marg {
@@ -107,6 +111,10 @@
       text-transform: none;
       padding-top: 62px;
       text-align: left;
+    }
+
+    &--br {
+      display: block;
     }
   }
 }

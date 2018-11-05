@@ -1,4 +1,5 @@
-.grey-back {
+.grey-back,
+.grey-back--footer {
   width: 100%;
   margin: 0 auto;
   background-color: $grey;
@@ -13,11 +14,5 @@
 @media (min-width: $desktop-width) {
   .grey-back {
     background-image: linear-gradient(to bottom, #ffffff 27.2%, transparent 27.2%), linear-gradient(to right, #f2f2f2 80%, #eaeaea 80%);
-  }
-
-  .grey-back--footer {
-    width: 100%;
-    margin: 0 auto;
-    background-color: $grey;
   }
 }
