@@ -107,15 +107,13 @@
 
 @media (min-width: $desktop-width) {
   .contacts-block {
-    margin-bottom: 23px;
     width: 1220px;
-    margin-left: 40px;
     margin: 0 auto;
   }
 
   .contacts-block__wrapper {
     display: flex;
-    width: 1244px;
+    width: 1236px;
     justify-content: space-between;
     margin: 0 auto;
     margin-left: -3px;
@@ -125,7 +123,7 @@
     margin: 0;
     padding-top: 68px;
     margin-top: -100px;
-    margin-left: -32px;
+    margin-left: -41px;
     padding-right: 45px;
     background-color: #ffffff;
     width: 512px;
@@ -138,12 +136,12 @@
     }
 
     &--email {
-      // margin-left: 1px;
+      margin-left: 4px;
       margin-top: 2px;
     }
 
     &--phone {
-      // margin-left: 64px;
+      margin-left: 64px;
       margin-top: 3px;
     }
   }

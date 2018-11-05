@@ -21,9 +21,7 @@
   }
 
   &--additional {
-    position: absolute;
-    top: 1877px;
-    left: 0;
+    margin-top: 42px;
   }
 }
 
@@ -45,21 +43,21 @@
     }
 
     &--additional {
-      top: 2591px;
+      margin-top: 61px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .green-line {
-    margin-top: 90px;
+    margin-top: 91px;
 
     &--checkbox {
       margin-top: 23px;
     }
 
     &--additional {
-      top: 1426px;
+      margin-top: 66px;
     }
   }
 }

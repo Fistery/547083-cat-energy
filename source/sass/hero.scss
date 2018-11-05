@@ -28,23 +28,16 @@
 @media (min-width: $tablet-width) {
   .hero {
     background-image: url("/img/index-can-tablet@1x.jpg");
-    background-position: 29px 201px;
+    background-position: 0 201px;
     background-size: contain;
     width: 709px;
     min-height: 810px;
     text-align: left;
-    padding: 0 0 0 120px;
+    padding: 0 0 0 89px;
   }
 
   .hero__image {
     display: none;
-  }
-
-  @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
-    .hero {
-      background-image: url("/img/index-can-tablet@2x.jpg");
-      background-size: 709px auto;
-    }
   }
 }
 
@@ -70,7 +63,7 @@
     display: block;
     content: "";
     top: 143px;
-    left: 499px;
+    left: 491px;
     width: 550px;
     height: auto;
   }

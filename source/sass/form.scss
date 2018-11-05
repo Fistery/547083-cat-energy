@@ -218,14 +218,14 @@
   }
 
   .form__label--text {
-    margin-left: 15px;
+    margin-left: 8px;
   }
 
   .form__wrapper-row {
     display: flex;
-    width: 1220px;
+    width: 1223px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 29px;
     height: 194px;
     box-sizing: border-box;
   }
@@ -255,14 +255,14 @@
     @include font(20px, 20px);
     width: 568px;
     height: 52px;
-    margin-top: 67px;
+    margin-top: 66px;
     margin-bottom: 65px;
-    margin-left: 9px;
+    margin-left: 1px;
   }
 
   .form__text {
     width: 180px;
     margin-top: 83px;
-    margin-right: 381px;
+    margin-right: 390px;
   }
 }

@@ -78,7 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    padding: 0 30px;
+    padding: 0;
     padding-bottom: 102px;
     width: 708px;
   }
@@ -187,14 +187,14 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    padding: 0 22px;
+    padding: 0;
     padding-bottom: 90px;
-    width: 1300px;
+    width: 1272px;
     margin: 0 auto;
   }
 
   .about__title {
-    margin: 44px 0 32px 24px;
+    margin: 44px 0 32px 26px;
   }
 
   .about__img {

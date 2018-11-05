@@ -92,9 +92,10 @@
   }
 
   .example {
-    background-color: #ffffff;
+    background-color: transparent;
     border-top: 1px solid $light-grey;
     width: 768px;
+    height: 1082px;
   }
 
   .example__title {
@@ -162,10 +163,11 @@
     justify-content: space-between;
     border-top: none;
     box-sizing: border-box;
-    padding: 0 8px;
-    margin-bottom: 76px;
+    padding: 0;
+    padding-bottom: 76px;
     background-color: transparent;
     width: 1300px;
+    height: auto;
   }
 
   .example__wrapper {
@@ -219,17 +221,6 @@
     &:nth-child(2) {
       margin-right: 0;
     }
-  }
-
-  .example__bg-grey {
-    display: block;
-    position: absolute;
-    background-image: linear-gradient(to right, $grey 68.2%, $lighten-grey 68.2%);
-    height: 590px;
-    width: 1300px;
-    bottom: -200px;
-    left: 0;
-    z-index: -1;
   }
 
   .example__info-text {

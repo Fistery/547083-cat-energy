@@ -222,10 +222,10 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    padding: 0 32px 0 47px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    width: 1300px;
+    width: 1220px;
   }
 
   .programs__item {
