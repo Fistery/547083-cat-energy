@@ -80,14 +80,14 @@
     &--email,
     &--phone {
       @include font(20px, 20px);
-      padding: 19px 0 12px 24px;
+      padding: 10px 18px 10px 18px;
       margin-left: 15px;
       margin-right: 13px;
       height: 50px;
     }
 
     &--phone {
-      padding: 19px 0 12px 19px;
+      padding: 10px 18px 10px 18px;
     }
 
     &::placeholder {
@@ -150,14 +150,14 @@
   .form__input {
     &--email,
     &--phone {
-      padding: 19px 0 12px 17px;
+      padding: 10px 18px 10px 18px;
       margin-left: 22px;
       height: 49px;
       width: 485px;
     }
 
     &--phone {
-      padding: 19px 0 10px 20px;
+      padding: 10px 18px 10px 18px;
       width: 473px;
       margin-left: 16px;
     }
