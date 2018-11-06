@@ -6,11 +6,13 @@
   position: relative;
   background-color: $grey;
   width: 320px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .example__title {
   @include font(36px, 60px);
+  font-weight: normal;
   margin: 0;
   padding-top: 17px;
 }

@@ -38,7 +38,6 @@
             <li class="dropdown-list__item"><a class="dropdown-list__link active">Подбор программы</a></li>
           </ul>
         </nav>
-        </div>
       </header>
 
   <main class="main-content contact-page">
@@ -53,10 +52,10 @@
         <div class="contact-form__row">
           <div class="container container--minw">
             <label class="form__label form__label--text">Имя:*
-              <input class="form__input form__input--text" type="text" name="name-input" placeholder="БАРСИК" pattern="^[А-Яа-яЁё\s]+$">
+              <input class="form__input form__input--text" type="text" name="name-input" placeholder="БАРСИК" pattern="^[А-Яа-яЁё\s]+$" required>
             </label><br>
             <label class="form__label form__label--text">Вес (кг):*
-              <input class="form__input form__input--text" type="text" name="weight-input" placeholder="7" pattern="[0-9]{1,2}">
+              <input class="form__input form__input--text" type="text" name="weight-input" placeholder="7" pattern="[0-9]{1,2}" required>
             </label><br>
             <label class="form__label form__label--text form__label--text-margin">Возраст (лет):
               <input class="form__input form__input--text form__input--mobile-width" type="text" name="age-input"
@@ -83,14 +82,14 @@
           <h3 class="contacts-block__title">Контактные данные (владельца кота)</h3>
           <div class="contacts-block__wrapper">
             <label class="form__label form__label--email">E-Mail:*
-              <input class="form__input form__input--email" type="email" name="email-input" placeholder="KUKLACHEV@GMAIL.COM">
+              <input class="form__input form__input--email" type="email" name="email-input" placeholder="KUKLACHEV@GMAIL.COM" required>
               <svg class="contacts-block__svg icon-mail-svg" width="17" height="13" viewBox="0 0 17 13">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </label><br>
             <label class="form__label form__label--phone">Телефон:*
               <input class="form__input form__input--phone" type="tel" name="number-input" placeholder="8 (960) 900-60-90"
-                pattern="\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                pattern="\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
               <svg class="contacts-block__svg icon-phone-svg" width="20" height="20" viewBox="0 0 20 20">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -110,30 +109,34 @@
         <div class="checkbox-input">
           <h3 class="checkbox-input__title">Дополнительно</h3>
           <div class="checkbox__tablet-wrapp">
-            <label class="form__label form__label--checkbox">Сахарозаменитель
-              <input class="form__input form__input--checkbox form__input--checkbox-one visually-hidden" type="checkbox" name="sugar" checked>
-              <svg class="checkbox-input__tick" width="21" height="15" viewBox="0 0 21.1 15.5">
-                <use xlink:href="#icon-tick"></use>
-              </svg>
-            </label>
-            <label class="form__label form__label--checkbox">Питьевая вода
-              <input class="form__input form__input--checkbox form__input--checkbox-tablet-tick visually-hidden" type="checkbox" name="whater">
-              <svg class="checkbox-input__tick" width="21" height="15" viewBox="0 0 21.1 15.5">
-                <use xlink:href="#icon-tick"></use>
-              </svg>
-            </label>
-            <label class="form__label form__label--checkbox">Молоко
-              <input class="form__input form__input--checkbox form__input--checkbox-three visually-hidden" type="checkbox" name="milk">
-              <svg class="checkbox-input__tick" width="21" height="15" viewBox="0 0 21.1 15.5">
-                <use xlink:href="#icon-tick"></use>
-              </svg>
-            </label>
-            <label class="form__label form__label--checkbox">Витамины
-              <input class="form__input form__input--checkbox form__input--checkbox-tablet-tick visually-hidden" type="checkbox" name="vitamins">
-              <svg class="checkbox-input__tick" width="21" height="15" viewBox="0 0 21.1 15.5">
-                <use xlink:href="#icon-tick"></use>
-              </svg>
-            </label>
+            <div class="checkbox-input__wrapper">
+            <input class="form__input form__input--checkbox form__input--checkbox-one visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+            <svg class="checkbox-input__tick" width="21" height="15" viewBox="0 0 21.1 15.5">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
+            <label class="form__label form__label--checkbox" for="sugar">Сахарозаменитель</label>
+          </div>
+          <div class="checkbox-input__wrapper">
+            <input class="form__input form__input--checkbox form__input--checkbox-tablet-tick visually-hidden" type="checkbox" name="whater" id="whater">
+            <svg class="checkbox-input__tick" width="21" height="15" viewBox="0 0 21.1 15.5">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
+            <label class="form__label form__label--checkbox" for="whater">Питьевая вода</label>
+          </div>
+          <div class="checkbox-input__wrapper">
+            <input class="form__input form__input--checkbox form__input--checkbox-three visually-hidden" type="checkbox" name="milk" id="milk">
+            <svg class="checkbox-input__tick" width="21" height="15" viewBox="0 0 21.1 15.5">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
+            <label class="form__label form__label--checkbox" for="milk">Молоко</label>
+          </div>
+          <div class="checkbox-input__wrapper">
+            <input class="form__input form__input--checkbox form__input--checkbox-tablet-tick visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+            <svg class="checkbox-input__tick" width="21" height="15" viewBox="0 0 21.1 15.5">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
+            <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
+          </div>
           </div>
         </div>
         <div class="form__btn-wrapper">
@@ -158,21 +161,21 @@
       <picture>
         <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1px, img/bg-map-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
         <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
         <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
         <img class="image map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="мы на карте">
       </picture>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2989814021196!2d30.320884561763!3d59.93881312301622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540300940054"
-        width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      <iframe class="map__active" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.2989814021196!2d30.320884561763!3d59.93881312301622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540300940054"
+        width="320" height="365" allowfullscreen></iframe>
       <div class="map__point">
         <img width="55" height="49" src="img/map-pin.png" alt="" class="image image-point">
       </div>
     </div>
-    <div class="grey-back--footer">
+    <div class="grey-back">
     <nav class="footer-nav">
         <div class="container footer-nav--tablet">
-          <a class="logo footer__logo">
+          <a class="logo footer__logo" href="index.html">
             <img width="128" height="24" class="footer-logo" src="img/logo-footer.svg" alt="">
           </a>
           <div class="socials">

@@ -29,6 +29,8 @@
 .catalog__title {
   @include font(16px, 20px);
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
   width: 100px;
   margin-top: 22px;
   margin-bottom: 13px;
@@ -52,6 +54,10 @@
   &--two {
     margin: 9px auto 0 auto;
   }
+}
+
+.catalog__link {
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {

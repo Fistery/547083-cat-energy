@@ -79,6 +79,7 @@
   .form__input {
     &--email,
     &--phone {
+      @include font(20px, 20px);
       padding: 19px 0 12px 24px;
       margin-left: 15px;
       margin-right: 13px;

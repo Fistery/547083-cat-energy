@@ -1,18 +1,17 @@
-.grey-back,
-.grey-back--footer {
+.grey-back {
   width: 100%;
   margin: 0 auto;
   background-color: $grey;
 }
 
 @media (min-width: $tablet-width) {
-  .grey-back {
+  .grey-back--example {
     background-image: linear-gradient(to bottom, #ffffff 57.3%, transparent 57.3%), linear-gradient(to right, $grey 50%, #eaeaea 50%);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .grey-back {
+  .grey-back--example {
     background-image: linear-gradient(to bottom, #ffffff 27.2%, transparent 27.2%), linear-gradient(to right, #f2f2f2 80%, #eaeaea 80%);
   }
 }
