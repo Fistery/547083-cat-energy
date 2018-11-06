@@ -62,6 +62,7 @@
 @media (min-width: $tablet-width) {
   .slider {
     margin-top: 255px;
+    height: 461px;
   }
 
   .slider__image--after {
@@ -102,7 +103,7 @@
   .slider__text-wrapper {
     position: absolute;
     padding: 0;
-    bottom: -383px;
+    bottom: 79px;
     left: 50.6%;
     transform: translate(-50%, 0);
   }
@@ -153,6 +154,7 @@
 @media (min-width: $desktop-width) {
   .slider {
     width: 610px;
+    height: 413px;
     margin-top: 145px;
     margin-right: 112px;
     background-color: transparent;
@@ -175,7 +177,7 @@
 
     &--tablet-after {
       width: 687px;
-      height: 651px;
+      min-height: 651px;
       clip: rect(auto, auto, auto, 363px);
       top: -171px;
       right: -112px;

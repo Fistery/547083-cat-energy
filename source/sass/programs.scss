@@ -140,6 +140,8 @@
 
 @media (min-width: $tablet-width) {
   .programs {
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     padding: 0 30px;
     width: 768px;
@@ -223,9 +225,10 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    padding: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
     width: 1220px;
   }
 

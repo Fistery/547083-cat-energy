@@ -132,9 +132,9 @@
 
   .checkbox__tablet-wrapp {
     display: flex;
-    flex-wrap: nowrap;
-    width: 1300px;
+    width: 1238px;
     box-sizing: border-box;
+    flex-wrap: wrap;
     padding-top: 20px;
     margin: 0 auto;
   }
@@ -145,7 +145,7 @@
   }
 
   .checkbox-input__wrapper {
-    width: 326px;
+    width: 261px;
 
     &:nth-of-type(1),
     &:nth-of-type(2) {

@@ -1,6 +1,7 @@
 .dropdown-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
   width: 320px;
   padding: 0;
