@@ -2,17 +2,9 @@
   position: relative;
 }
 
-.slider__mobile {
-  display: block;
-}
-
-.slider__tablet {
-  display: none;
-}
-
 
 .slider__image {
-  margin-top: 40px;
+  margin-top: 9px;
 }
 
 .slider__image--before {
@@ -26,141 +18,145 @@
 .slider__text-wrapper {
   display: flex;
   justify-content: center;
-  padding: 35px 0;
+  padding: 29px 0 36px 0;
 }
 
 .slider__text {
   @include font(16px, 20px);
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0 12px;
   margin: 0;
+  margin-left: 6px;
 }
 
 .slider__btn {
   cursor: pointer;
 }
 
-.slider__line {
-  width: 84px;
-  height: 14px;
-  border: 1px solid $dark-grey;
-  border-radius: 15px;
-  margin-top: 4px;
-  box-sizing: border-box;
-  padding: 3px 5px;
-}
-
-.slider__control {
-  width: 35px;
-  height: 6px;
-  background-color: $green;
-  border-radius: 5px;
-
-  &--after {
-    margin-left: auto;
-  }
-}
-
-.slider__image--mobile-before,
-.slider__image--mobile-after {
-  display: none;
-}
-
 .slider-active {
   display: block;
 }
 
+.slider__range-tablet {
+  display: none;
+}
+
+.slider__range-mobile {
+  width: 84px;
+  height: 14px;
+  appearance: none;
+  border: 1px solid $light-grey;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 3px 5px;
+}
+
+.slider__range-mobile::-webkit-slider-thumb {
+  appearance: none;
+  width: 35px;
+  height: 6px;
+  background-color: $green;
+  border-radius: 15px;
+}
+
 @media (min-width: $tablet-width) {
-  .slider__mobile {
+  .slider {
+    margin-top: 255px;
+    height: 461px;
+  }
+
+  .slider__image--after {
     display: none;
   }
 
-  .slider__tablet {
-    display: block;
-  }
-
   .grey-bg {
-    height: 462px;
-    background-image: linear-gradient(to right, $grey 49.5%, $lighten-grey 49.5%);
-    margin-top: 246px;
+    height: 461px;
+    width: 768px;
+    background-image: linear-gradient(to right, $grey 50%, $lighten-grey 50%);
+    margin-top: 255px;
   }
 
   .slider__image {
     &--tablet-before,
     &--tablet-after {
+      display: block;
       position: absolute;
     }
 
     &--tablet-before {
-      clip: rect(auto, 335px, auto, auto);
-      top: -200px;
-      left: 45px;
+      width: 689px;
+      height: 519px;
+      clip: rect(auto, 338px, auto, auto);
+      top: -179px;
+      left: 46px;
     }
 
     &--tablet-after {
-      clip: rect(auto, auto, auto, 337px);
-      top: -200px;
-      right: 35px;
+      width: 690px;
+      height: 517px;
+      clip: rect(auto, auto, auto, 338px);
+      top: -179px;
+      right: 32px;
     }
   }
 
   .slider__text-wrapper {
     position: absolute;
-    bottom: 0;
-    left: 50%;
+    padding: 0;
+    bottom: 79px;
+    left: 50.6%;
     transform: translate(-50%, 0);
   }
 
   .slider__text {
     @include font(20px, 20px);
     border-bottom: 1px dotted #bebebe;
-    padding: 10px 0;
-    margin: 0 20px;
+    margin: -5px 14px -5px 4px;
   }
 
-  .slider__line {
-    position: relative;
-    margin-top: 18px;
-    border: none;
-    width: 428px;
+  .slider__range-mobile {
+    display: none;
+  }
+
+  .slider__range-tablet {
+    display: block;
+    appearance: none;
+    width: 427px;
     height: 6px;
+    border: none;
+    border-radius: 15px;
     background-color: $light-grey;
+    box-sizing: border-box;
+    padding: 0;
   }
 
-  .slider__control {
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    background-color: #ffffff;
-    border: 1px solid $light-grey;
+  .slider__range-tablet::-webkit-slider-thumb {
+    appearance: none;
+    width: 34px;
+    height: 34px;
+    background-color: $green;
     border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: 1px solid $light-grey;
+    box-shadow: inset 0 0 0 12px #ffffff;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 8px;
-      height: 8px;
-      background-color: $green;
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+  .slider__range-tablet:hover::-webkit-slider-thumb {
+    box-shadow:
+      0 5px 10px 0 $grey,
+      inset 0 0 0 12px #ffffff;
+  }
 
-    &--after {
-      margin-left: auto;
-    }
+  .slider__range-tablet:active::-webkit-slider-thumb {
+    border: 1px solid $green;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
     width: 610px;
-    margin-top: 150px;
-    margin-right: 100px;
+    height: 413px;
+    margin-top: 145px;
+    margin-right: 112px;
     background-color: transparent;
   }
 
@@ -170,42 +166,55 @@
 
   .slider__image {
     width: 677px;
+    height: 651px;
 
     &--tablet-before {
-      clip: rect(auto, 360px, auto, auto);
-      top: -200px;
-      left: 45px;
+      width: 689px;
+      clip: rect(auto, 366px, auto, auto);
+      top: -171px;
+      left: 32px;
     }
 
     &--tablet-after {
-      clip: rect(auto, auto, auto, 355px);
-      top: -200px;
-      right: -115px;
+      width: 687px;
+      min-height: 651px;
+      clip: rect(auto, auto, auto, 363px);
+      top: -171px;
+      right: -112px;
+      background-image: linear-gradient(to bottom, #ffffff 29%, #eaeaea 29%);
     }
   }
 
   .slider__text-wrapper {
-    bottom: -40px;
-    width: 570px;
-    margin-left: 100px;
-    padding-top: 0;
+    bottom: 3px;
+    left: 401px;
+    width: 609px;
   }
 
-  .slider__line {
-    position: relative;
-    margin-top: 18px;
-    border: none;
-    width: 428px;
-    height: 6px;
+  .slider__text {
+    padding: 0;
+    margin: -6px 20px -5px 12px;
+  }
+
+  .slider__range-tablet {
+    width: 436px;
+    border-radius: 15px;
     background-color: $light-grey;
   }
 
-  .slider__control:hover {
-    box-shadow: 0 4px 4px 0 #bcbcbc;
+  .slider__range-tablet::-webkit-slider-thumb {
+    box-shadow:
+      0 5px 10px 0 $light-grey,
+      inset 0 0 0 12px #ffffff;
   }
 
-  .slider__control:active {
-    border: 2px solid $green;
-    box-shadow: 0 5px 4px 1px #bcbcbc;
+  .slider__range-tablet:hover::-webkit-slider-thumb {
+    box-shadow:
+      0 5px 10px 0 grey,
+      inset 0 0 0 12px #ffffff;
+  }
+
+  .slider__range-tablet:active::-webkit-slider-thumb {
+    border: 1px solid $green;
   }
 }

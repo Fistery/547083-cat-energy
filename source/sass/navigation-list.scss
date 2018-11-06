@@ -6,8 +6,8 @@
   position: absolute;
   border: none;
   background: none;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   top: 18px;
   right: 20px;
 }
@@ -21,28 +21,29 @@
 }
 
 .navigation-list--closed .navigation-list__btn {
-  width: 30px;
+  position: absolute;
+  width: 25px;
   height: 3px;
   background-color: #000000;
-  margin-bottom: 60px;
+  top: 22px;
 
   &::before {
     position: absolute;
     content: "";
-    width: 30px;
+    width: 25px;
     height: 3px;
     background-color: #000000;
-    top: 20px;
+    top: 17px;
     right: 0;
   }
 
   &::after {
     position: absolute;
     content: "";
-    width: 30px;
+    width: 25px;
     height: 3px;
     background-color: #000000;
-    top: 10px;
+    top: 8.5px;
     right: 0;
   }
 }
@@ -86,7 +87,7 @@
   }
 
   .active {
-    border-bottom: 1px solid $green;
+    border-bottom: 2px solid $green;
   }
 
   .navigation-list__btn {
@@ -104,12 +105,19 @@
 
 @media (min-width: $desktop-width) {
   .navigation-list {
-    display: flex;
-    margin-right: 110px;
-    margin-top: 40px;
+    width: 100%;
+    margin: 0 auto;
 
     &--absolute {
       position: absolute;
+      margin-top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 15;
+    }
+
+    &--catalog-desk {
+      padding-top: 30px;
     }
   }
 

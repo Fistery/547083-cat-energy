@@ -1,86 +1,83 @@
+.textarea {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .textarea__title {
   position: relative;
   font-weight: 400;
+  width: 143px;
+  margin: -24px 0 35px -1px;
+  background-color: #ffffff;
 
   @include font(24px, 24px);
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 158px;
-    height: 3px;
-    background-color: $green;
-    top: 13px;
-    right: -20px;
-  }
 }
 
 .textarea__input {
   display: block;
   width: 280px;
+  height: 150px;
 
   @include font(16px, 18px);
   font-family: "Oswald", "Arial", sans-serif;
   border: 1px solid $light-grey;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 12px 13px;
 }
 
 @media (min-width: $tablet-width) {
   .textarea {
-    margin-left: 35px;
+    width: 708px;
+    margin: 0 auto;
   }
 
   .textarea__title {
     @include font(36px, 36px);
-
-    &::after {
-      width: 479px;
-      top: 18px;
-      right: -13px;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 3px;
-      background-color: $green;
-      top: 18px;
-      left: -65px;
-    }
+    width: 220px;
+    padding-left: 39px;
+    margin-top: -32px;
+    margin-left: -30px;
   }
 
   .textarea__input {
     width: 630px;
-    margin-top: 65px;
+    height: 175px;
+    margin-top: 76px;
     margin-bottom: 65px;
+    margin-left: 10px;
 
     @include font(16px, 18px);
     font-family: "Oswald", "Arial", sans-serif;
     border: 1px solid $light-grey;
     box-sizing: border-box;
-    padding: 10px;
+    padding-top: 9px;
+    padding-left: 19px;
+
+    &::placeholder {
+      @include font(20px, 30px);
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .textarea {
-    margin-left: 40px;
+    width: 1238px;
+    margin: 0 auto;
   }
 
   .textarea__title {
-    @include font(36px, 36px);
+    margin-top: -33px;
+    margin-left: -32px;
 
     &::after {
       width: 1111px;
-      top: 18px;
+      top: 22px;
       right: -69px;
     }
 
     &::before {
       width: 70px;
-      top: 18px;
+      top: 22px;
       left: -110px;
     }
   }

@@ -1,4 +1,6 @@
 .address {
+  width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
 
   &--grey {
@@ -8,21 +10,22 @@
 
 .address__text {
   @include font(16px, 20px);
-  width: 140px;
+  width: 141px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  margin-left: -1px;
 
   padding: {
-    top: 30px;
-    bottom: 30px;
+    top: 28px;
+    bottom: 26px;
   }
 
   &--regular {
     @include font(14px, 20px);
     font-family: "Arial", sans-serif;
     text-transform: none;
-    padding-top: 31px;
+    padding-top: 28px;
   }
 
   &--br {
@@ -30,8 +33,14 @@
   }
 }
 
+.address__grey-wrapper {
+  background-color: $grey;
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .address {
+    width: 768px;
     background-color: #ffffff;
 
     &--grey {
@@ -47,20 +56,27 @@
     margin: 0;
 
     padding: {
-      top: 30px;
-      bottom: 30px;
+      top: 65px;
+      bottom: 57px;
+      left: 40px;
     }
 
     &--regular {
       @include font(16px, 20px);
       text-transform: none;
-      padding-top: 31px;
+      padding-top: 64px;
+      padding-right: 40px;
+      padding-bottom: 0;
       text-align: right;
     }
 
     &--br {
       display: block;
     }
+  }
+
+  .address__text--marg + .address__text--marg {
+    padding-top: 10px;
   }
 }
 
@@ -70,7 +86,12 @@
     width: 570px;
     z-index: 2;
     top: 96px;
-    left: 110px;
+    right: 50%;
+    transform: translateX(-40px);
+
+    &--grey {
+      background-color: #ffffff;
+    }
   }
 
   .address__text {
@@ -81,14 +102,14 @@
     margin: 0;
 
     padding: {
-      top: 65px;
-      bottom: 65px;
+      top: 63px;
+      bottom: 58px;
     }
 
     &--regular {
       @include font(16px, 20px);
       text-transform: none;
-      padding-top: 65px;
+      padding-top: 62px;
       text-align: left;
     }
 

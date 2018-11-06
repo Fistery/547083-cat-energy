@@ -1,32 +1,31 @@
+.checkbox-input {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .checkbox-input__title {
   position: relative;
   font-weight: 400;
+  width: 164px;
+  margin-top: -24px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
 
   @include font(24px, 24px);
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 136px;
-    height: 3px;
-    background-color: $green;
-    top: 13px;
-    right: -20px;
-  }
 }
 
 .form__label--checkbox {
   position: relative;
-  padding-left: 50px;
+  padding-left: 46px;
   margin-bottom: 25px;
 
   &::before {
     position: absolute;
     content: "";
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border: 1px solid $light-grey;
-    top: -7px;
+    top: -5px;
     left: 0;
   }
 }
@@ -43,143 +42,137 @@
   fill: $green;
   width: 21px;
   height: 16px;
-  top: 1px;
-  left: 6px;
+  top: 2px;
+  left: 5px;
 }
 
-.form__input--checkbox:checked + .checkbox-input__tick {
-  display: block;
+.checkbox-input__wrapper {
+  position: relative;
 }
 
-.checkbox-tick {
-  display: none;
-  position: absolute;
-  fill: $green;
-  width: 21px;
-  height: 16px;
-  top: 1px;
-  left: 6px;
-}
-
-.form__input--checkbox:checked + .checkbox-tick {
+.form__input--checkbox:checked ~ .checkbox-input__tick {
   display: block;
 }
 
 @media (min-width: $tablet-width) {
+  .checkbox-input {
+    width: 680px;
+    margin: 0 auto;
+  }
+
   .checkbox__tablet-wrapp {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 480px;
-    margin-left: 30px;
+    justify-content: space-between;
+    width: 580px;
+    margin-left: 16px;
     margin-top: 60px;
   }
 
   .checkbox-input__title {
-    margin-top: 0;
-    margin-left: 35px;
+    margin-top: -32px;
+    margin-left: -14px;
+    padding-left: 39px;
+    width: 253px;
 
     @include font(36px, 36px);
+  }
 
-    &::after {
-      width: 446px;
-      top: 22px;
-      right: -30px;
+  .checkbox-input__wrapper {
+    width: 237px;
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      margin-bottom: 41px;
     }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 3px;
-      background-color: $green;
-      top: 22px;
-      left: -65px;
+    &:nth-of-type(2),
+    &:nth-of-type(4) {
+      padding-left: 80px;
     }
   }
 
 
   .form__label--checkbox {
+    @include font(20px, 30px);
     position: relative;
+    padding-top: 3px;
+    padding-left: 69px;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: -2px;
 
     &::before {
       position: absolute;
       content: "";
-      width: 30px;
-      height: 30px;
+      width: 38px;
+      height: 38px;
       border: 1px solid $light-grey;
-      top: -7px;
-      left: 0;
-    }
-
-    &:nth-child(1) {
-      margin-right: 126px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 200px;
-    }
-
-    &:nth-child(3),
-    &:nth-child(4) {
-      margin-top: 40px;
+      top: -3px;
+      left: 10px;
     }
   }
 
-  .checkbox-tick {
-    display: none;
-    position: absolute;
-    fill: $green;
-    width: 21px;
-    height: 16px;
-    top: 1px;
-    left: 6px;
+  .form__input--checkbox:checked + .checkbox-input__tick {
+    top: 9px;
+    left: 20px;
+  }
+
+  .form__input--checkbox-tablet-tick:checked + .checkbox-input__tick {
+    top: 9px;
+    left: 100px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .checkbox-input {
+    width: 1238px;
+    margin: 0 auto;
+  }
+
   .checkbox__tablet-wrapp {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 1220px;
-    margin-left: 40px;
-    margin-top: 60px;
+    width: 1238px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin: 0 auto;
   }
 
   .checkbox-input__title {
-    margin-left: 40px;
+    margin-top: -32px;
+    margin-left: -32px;
+  }
 
-    &::after {
-      width: 1078px;
-      top: 22px;
-      right: -70px;
+  .checkbox-input__wrapper {
+    width: 261px;
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      margin-bottom: 0;
     }
 
-    &::before {
-      width: 70px;
-      top: 22px;
-      left: -110px;
+    &:nth-of-type(2),
+    &:nth-of-type(4) {
+      padding-left: 0;
     }
   }
 
   .form__label--checkbox {
-    &:nth-child(1) {
-      margin-right: 0;
-    }
+    @include font(20px, 30px);
+    position: relative;
+    padding-top: 3px;
+    padding-left: 67px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 
-    &:nth-child(3) {
-      margin-right: 0;
-    }
+  .form__input--checkbox:checked + .checkbox-input__tick {
+    top: 9px;
+    left: 18px;
+  }
 
-    &:nth-child(3),
-    &:nth-child(4) {
-      margin-top: 0;
-    }
-
-    &:nth-child(4) {
-      margin-right: 100px;
-    }
+  .form__input--checkbox:focus ~ .form__label--checkbox {
+    outline: 2px solid #7bb6fa;
   }
 }
