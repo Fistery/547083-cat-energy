@@ -1,6 +1,7 @@
 .programs {
   @include box-sizing;
   width: 320px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
