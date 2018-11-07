@@ -64,6 +64,7 @@
   .catalog {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     width: 708px;
     margin: 0 auto;
   }
