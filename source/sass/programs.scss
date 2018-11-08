@@ -89,7 +89,7 @@
 
   margin-top: 30px;
   margin-bottom: 20px;
-  width: 227px;
+  width: 232px;
 }
 
 .programs__link {
@@ -170,6 +170,7 @@
   .programs__title {
     @include font(36px, 37px);
     padding-left: 3px;
+    padding-top: 2px;
     text-align: left;
 
     &--cat-down {
