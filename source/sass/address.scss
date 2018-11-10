@@ -27,10 +27,6 @@
     text-transform: none;
     padding-top: 28px;
   }
-
-  &--br {
-    display: none;
-  }
 }
 
 .address__grey-wrapper {
@@ -69,14 +65,15 @@
       padding-bottom: 0;
       text-align: right;
     }
-
-    &--br {
-      display: block;
-    }
   }
 
   .address__text--marg + .address__text--marg {
     padding-top: 10px;
+  }
+
+  .address__text-item--marg {
+    display: block;
+    margin-bottom: 14px;
   }
 }
 
@@ -112,9 +109,9 @@
       padding-top: 62px;
       text-align: left;
     }
+  }
 
-    &--br {
-      display: block;
-    }
+  .address__br {
+    display: block;
   }
 }

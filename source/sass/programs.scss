@@ -98,6 +98,7 @@
   text-decoration: none;
   text-transform: uppercase;
   margin-top: 20px;
+  transition: 0.2s;
 
   @include font(16px, 16px);
 
@@ -105,23 +106,37 @@
 
   &::after {
     position: absolute;
-    content: url("../img/icon-right-arrow-long.svg");
-    top: -2px;
-    right: -35px;
-    width: 24px;
-    height: 11px;
+    content: "";
+    top: 6px;
+    right: -33px;
+    width: 22px;
+    height: 3px;
+    background-color: #000000;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 6px solid transparent;
+    border-left-color: #000000;
     transition: 0.2s;
+    top: 2px;
+    right: -40px;
   }
 }
 
 .programs__link:hover {
   &::after {
     position: absolute;
-    content: url("../img/icon-right-arrow-verylong.svg");
-    top: -2px;
-    right: -45px;
-    width: 34px;
-    height: 11px;
+    content: "";
+    right: -41px;
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+  }
+
+  &::before {
+    right: -50px;
   }
 }
 
@@ -130,11 +145,15 @@
 
   &::after {
     position: absolute;
-    content: url("../img/icon-right-arrow-verylong.svg");
-    top: -1px;
-    right: -60px;
-    width: 34px;
-    height: 11px;
+    content: "";
+    right: -41px;
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+  }
+
+  &::before {
+    right: -50px;
   }
 }
 
@@ -214,12 +233,23 @@
     color: #000000;
 
     &::after {
-      position: absolute;
-      content: url("../img/icon-right-arrow-long.svg");
-      top: -3px;
-      right: -48px;
-      width: 24px;
-      height: 11px;
+      top: 7px;
+      right: -45px;
+    }
+
+    &::before {
+      right: -54px;
+      top: 3px;
+    }
+  }
+
+  .programs__link:hover {
+    &::after {
+      right: -54px;
+    }
+
+    &::before {
+      right: -65px;
     }
   }
 }
@@ -289,17 +319,5 @@
   .programs__link {
     margin-top: 0;
     margin-left: 0;
-
-    &::after {
-      top: -4px;
-      right: -48px;
-    }
-  }
-
-  .programs__link:hover {
-    &::after {
-      top: -4px;
-      right: -58px;
-    }
   }
 }

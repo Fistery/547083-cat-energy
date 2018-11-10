@@ -84,7 +84,7 @@
   color: #ffffff;
   text-transform: uppercase;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   margin-top: 18px;
   margin-bottom: 1px;
 }
@@ -200,7 +200,7 @@
   .form__btn {
     @include font(20px, 20px);
     width: 283px;
-    height: 52px;
+    min-height: 52px;
     margin-top: 60px;
     margin-left: 13px;
     margin-bottom: 65px;
@@ -261,7 +261,7 @@
   .form__btn {
     @include font(20px, 20px);
     width: 568px;
-    height: 52px;
+    min-height: 52px;
     margin-top: 65px;
     margin-bottom: 65px;
     margin-left: 1px;

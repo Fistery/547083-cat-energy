@@ -114,6 +114,7 @@
 
   .contacts-block__wrapper {
     display: flex;
+    flex-wrap: wrap;
     width: 1236px;
     justify-content: space-between;
     margin: 0 auto;
