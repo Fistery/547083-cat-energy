@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
-  <link rel="preload" href="font/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="font/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 </head>
 
 <body>
@@ -21,6 +20,7 @@
     <nav class="navigation-list navigation-list--catalog-desk navigation-list--closed navigation-list--nojs">
       <div class="container position-container">
         <a href="index.html" class="logo logo--mobile">
+          <span class="visually-hidden">Логотип компании Cat Energy</span>
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px) and (max-width: 1299px)" srcset="img/logo-tablet.svg">
@@ -160,8 +160,9 @@
       <div class="address address--grey">
         <div class="container container--address">
           <p class="address__text">Приглашаем<br> к сотрудничеству дилеров!</p>
-          <p class="address__text address__text--regular">ул. Большая Конюшенная, д. 19/8 <br class="address__text--br"><br
-              class="address__text--br"> Санкт-Петербург</p>
+          <p class="address__text address__text--regular"><span class="address__text-item address__text-item--marg">ул.
+              Большая Конюшенная, д. 19/8</span>
+            <span class="address__text-item">Санкт-Петербург</span></p>
         </div>
       </div>
     </div>
@@ -184,21 +185,25 @@
       <nav class="footer-nav">
         <div class="container footer-nav--tablet">
           <a class="logo footer__logo" href="index.html">
+            <span class="visually-hidden">Главная страница</span>
             <img width="128" height="24" class="footer-logo" src="img/logo-footer.svg" alt="">
           </a>
           <div class="socials">
             <ul class="socials__list">
               <li class="socials__item"><a href="#" class="socials__link socials__link--vk">
+                  <span class="visually-hidden">Вконтакте</span>
                   <svg width="33" height="17" class="socials__svg">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a></li>
               <li class="socials__item"><a href="#" class="socials__link socials__link--insta">
+                  <span class="visually-hidden">Инстаграм</span>
                   <svg width="24" height="24" class="socials__svg">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a></li>
               <li class="socials__item"><a href="#" class="socials__link socials__link--fb">
+                  <span class="visually-hidden">Фэйсбук</span>
                   <svg class="socials__svg" width="14" height="28">
                     <use xlink:href="#icon-fb"></use>
                   </svg>

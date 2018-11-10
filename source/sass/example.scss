@@ -101,7 +101,7 @@
 
   .example__title {
     @include font(60px, 60px);
-    padding-top: 43px;
+    padding-top: 46px;
     margin: auto;
   }
 
@@ -189,6 +189,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 365px;
+    margin-top: 20px;
   }
 
   .example__text {

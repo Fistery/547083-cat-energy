@@ -116,7 +116,7 @@
   .about__title {
     @include font(60px, 60px);
     margin: auto;
-    margin-top: 45px;
+    margin-top: 41px;
   }
 
   .about__text {
@@ -148,7 +148,7 @@
 
     &:nth-child(odd) {
       margin-right: 180px;
-      width: 204px;
+      width: 206px;
     }
 
     &:nth-child(even) {
